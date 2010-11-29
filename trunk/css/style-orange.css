@@ -1,0 +1,501 @@
+@charset "utf-8";
+
+body {
+	color: #ccc;
+	background: #202020 url(../images/orange/page_bg.png) repeat-x 0 top;
+}
+
+#container {
+	min-height: 550px;
+	background: url(../images/orange/main_bg.png) no-repeat center top;
+}
+
+a,
+a:link,
+a:visited {
+	color: #fe6900;
+}
+
+a:hover {
+	color: #fff;
+}
+
+#toolbar {
+	background: #000;
+	border-bottom: 1px solid #242424;
+	color: #FFF;
+}
+
+#toolbar a {
+	color: #C6C6C6;
+	border-right: 1px solid #1F1F1F;
+	padding: 0px 15px 0px 0px;
+	text-decoration: none;
+}
+
+#toolbar a:hover {
+	color: #fff;
+}
+
+#toolbar li.active a {
+	color: #fe6900;
+}
+
+#toolbar li.active a:hover {
+	color: #f2904b;
+}
+
+#search .inputbox {
+	background: #2f2f2f url(../images/orange/search_bg.png) no-repeat 4% 50%;
+	border: 1px solid #2f2f2f;
+	color: #9B9B9B;
+}
+
+#search .inputbox:focus {
+	outline: none;
+}
+
+#logo-graphic h1 a {
+	background: url(../images/orange/logo.png) no-repeat 0 0;
+}
+
+#logo-text h1 a {
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+	-moz-text-shadow: 1px 1px 1px #000;
+	-webkit-text-shadow: 1px 1px 1px #000;
+	-khtml-text-shadow: 1px 1px 1px #000;
+}
+
+#logo-text h2 {
+	color: #CCC;
+}
+
+#banner {
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+	-moz-text-shadow: 1px 1px 1px #000;
+	-webkit-text-shadow: 1px 1px 1px #000;
+	-khtml-text-shadow: 1px 1px 1px #000;
+}
+
+#banner a {
+	color: #FFF;
+}
+
+/* @group Main Menu */
+
+#menu {
+	height: 52px;
+	background: url(../images/orange/nav_l.png) no-repeat left center;
+	font-size: 15px;
+	position: relative;
+}
+
+#menu ul.menu {
+	background: url(../images/orange/nav_r.png) no-repeat right center;
+	height: 52px;
+	margin-left: 10px;
+}
+
+#menu li {
+	
+}
+
+#menu li a {
+	color: #FFF;
+	text-shadow: #95441a 0 -1px 0;
+	-moz-text-shadow: 1px 1px 1px #000;
+	-webkit-text-shadow: 1px 1px 1px #000;
+	-khtml-text-shadow: 1px 1px 1px #000;
+}
+
+#menu li:hover {
+	background: url(../images/orange/nav_hover.png) repeat-x right top;
+}
+
+#menu li.active {
+	background: url(../images/orange/nav_active.png) repeat-x right top;
+}
+
+#menu li.active a {
+	color: #fe6900;
+	text-shadow: 1px 1px 0px #000;
+	-moz-text-shadow: 1px 1px 1px #000;
+	-webkit-text-shadow: 1px 1px 1px #000;
+	-khtml-text-shadow: 1px 1px 1px #000;
+}
+
+#menu ul ul {
+	background: url(../images/orange/menu_bg_trans.png) repeat;
+}
+
+#menu ul ul li {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+#menu ul ul li:hover {
+	background: #000;
+}
+
+#menu ul ul li a {
+	color: #FFF;
+	text-shadow: none;
+	border-bottom: 1px solid #1c1c1c;
+}
+
+#menu ul ul li:hover ul li a {
+	color: #FFF;
+}
+
+#menu ul ul li a:hover,
+#menu ul ul li:hover a,
+#menu ul ul li:hover ul li:hover a {
+	color: #FFF;
+}
+
+#menu ul li.active ul li.active a {
+	color: #FFF;
+}
+
+#menu ul li.active ul li.active li a {
+	color: #FFF;
+}
+
+#menu ul li.active ul li.active li:hover a {
+	color: #FFF;
+}
+
+#menu ul li.active ul li.active li.active a {
+	color: #FFF;
+}
+
+/* @end */
+
+.elements {
+	background: #F8F8F8 url(../images/orange/container.png) repeat-x 0 0;
+	border-top: 1px solid #FFF;
+	color: #333;
+}
+
+#breadcrumbs {
+	background: #F8F8F8 url(../images/orange/bread_bg.png) repeat-x 0 0;
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	margin: 5px 0px 10px 0px;
+	padding: 0px 0px 0px 10px;
+	border: 1px solid #1B1B1B;
+	background-color: #000;
+	box-shadow: 0px 1px 2px #121212;
+	-moz-box-shadow: 0px 1px 2px #121212;
+	-webkit-box-shadow: 0px 1px 2px #121212;
+	-khtml-box-shadow: 0px 1px 2px #121212;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-khtml-border-radius: 4px 4px 4px 4px;
+}
+
+#breadcrumbs img {
+	position: relative;
+	top: 4px;
+	padding: 0px 4px 0px 4px;
+}
+
+#container h1, #container .componentheading {
+	background: url(../images/orange/divider.png) repeat-x center bottom;
+	color: #7a7a7a;
+	text-shadow: 1px 1px 0px #000;
+	-moz-text-shadow: 1px 1px 0px #000;
+	-webkit-text-shadow: 1px 1px 0px #000;
+	-khtml-text-shadow: 1px 1px 0px #000;
+	letter-spacing: -1px;
+}
+
+#container h1.componentheading {
+	font-size: 42px;
+	padding: 5px 0px 15px 0px;
+	margin: 0px 0px;
+	line-height: 100%;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	background: url(../images/divider_fade.png) repeat-x center bottom;
+	text-shadow: #000 0px -2px 4px;
+}
+
+#container h2, #container .contentheading {
+	color: #fff;
+	text-shadow: 1px 1px 0px #000;
+	-moz-text-shadow: 1px 1px 0px #000;
+	-webkit-text-shadow: 1px 1px 0px #000;
+	-khtml-text-shadow: 1px 1px 0px #000;
+	letter-spacing: -1px;
+}
+
+#container h3,#container h4 {
+	font-weight: normal;
+}
+
+.elements-bot {
+	background: url(../images/orange/teaserbg.png) repeat center bottom;
+	border-top: 8px solid #1d1d1d;
+	border-bottom: 8px solid #1d1d1d;
+	color: #999;
+}
+
+#footer,
+#footer a {
+	color: #CCC;
+}
+
+.iteminfo {
+	background: url(../images/orange/divider.png) repeat-x center bottom;
+}
+
+/* @group Header */
+
+/* Header Logo - Set size in template parameters! */
+
+#header span#graphic a,#header h1#graphic a {
+	background: url(../images/orange/logo.png) no-repeat left center;
+}
+
+/* Text Logo */
+
+#header span#text-header a,#header h1#text-header a {
+	font-size: 40px;
+	line-height: 100%;
+	color: #fe6900;
+	text-shadow: #000 1px 1px 1px;
+}
+
+/* Text Logo Hover */
+
+#header span#text-header a:hover,#header h1#text-header a:hover {
+	color: #c45100;
+}
+
+/* Text Slogan */
+
+#header span#text-slogan,#header h2#text-slogan {
+	font-size: 18px;
+	color: #7d8080;
+	text-shadow: #000 0 1px 1px;
+}
+
+/* @end */
+
+/* @group Modules */
+
+div.module h3,
+div.moduleS1 h3,
+div.moduleS2 h3,
+div.moduleS3 h3,
+div.moduleS4 h3 {
+	font-size: 18px;
+	padding: 0px 0px 8px 0px;
+	margin: 0px 0px 8px 0px;
+	height: auto;
+	font-weight: normal;
+}
+
+div.module,
+div.moduleS1,
+div.moduleS2,
+div.moduleS3,
+div.moduleS4 {
+	font-size: 14px;
+	line-height: 140%;
+}
+
+/* ============  DEFAULT  ============ */
+
+div.module {
+	color: #ccc;
+	text-shadow: #000 1px 1px 0;
+	margin-bottom: 15px;
+	height: 1%;
+}
+
+div.module div.pad {
+	padding: px;
+}
+
+div.module h3 {
+	color: #ebebeb;
+	background: url(../images/orange/divider.png) repeat-x 0 bottom;
+	text-shadow: #000 1px 1px 0px;
+}
+
+div.module a {
+	text-shadow: none;
+}
+
+/* ============  S1  ============ */
+
+div.moduleS1 {
+	color: #f4f4f4;
+	text-shadow: #5f0001 1px 1px 0;
+	background: url(../images/orange/S1.png) repeat-x center top;
+	box-shadow: 0px 4px 4px #161616;
+	-webkit-box-shadow: 0px 4px 4px #161616;
+	-moz-box-shadow: 0px 4px 4px #161616;
+	-khtml-box-shadow: 0px 4px 4px #161616;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	height: 1%;
+}
+
+div.moduleS1 div.pad {
+	padding: 12px 12px 10px 12px;
+}
+
+div.moduleS1 h3 {
+	color: #ebebeb;
+	background: url(../images/orange/S1_heading.png) repeat-x 0 bottom;
+	text-shadow: #5f0001 1px 1px 0;
+}
+
+div.moduleS1 a {
+	color: #febe95;
+	text-shadow: none;
+}
+
+/* ============  S2  ============ */
+
+div.moduleS2 {
+	color: #bac7cb;
+	text-shadow: #051f2b 1px 1px 0;
+	background: url(../images/orange/S2.png) repeat-x center top;
+	box-shadow: 0px 4px 4px #161616;
+	-webkit-box-shadow: 0px 4px 4px #161616;
+	-moz-box-shadow: 0px 4px 4px #161616;
+	-khtml-box-shadow: 0px 4px 4px #161616;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	height: 1%;
+}
+
+div.moduleS2 div.pad {
+	padding: 12px 12px 10px 12px;
+}
+
+div.moduleS2 h3 {
+	color: #b3dcea;
+	background: url(../images/orange/S2_heading.png) repeat-x 0 bottom;
+	text-shadow: #1e2528 1px -2px 0;
+}
+
+div.moduleS2 a {
+	color: #a2bbb5;
+	text-shadow: none;
+}
+
+/* ============  S3  ============ */
+
+div.moduleS3 {
+	color: #dee9ed;
+	text-shadow: #667278 1px 1px 0;
+	background: url(../images/orange/S3.png) repeat-x center top;
+	box-shadow: 0px 4px 4px #161616;
+	-webkit-box-shadow: 0px 4px 4px #161616;
+	-moz-box-shadow: 0px 4px 4px #161616;
+	-khtml-box-shadow: 0px 4px 4px #161616;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	height: 1%;
+}
+
+div.moduleS3 div.pad {
+	padding: 12px 12px 10px 12px;
+}
+
+div.moduleS3 h3 {
+	color: #2f3233;
+	background: url(../images/orange/S3_heading.png) repeat-x 0 bottom;
+	text-shadow: #bacacf 1px 1px 0;
+}
+
+div.moduleS3 a {
+	color: #0e2833;
+	text-shadow: none;
+}
+
+/* ============  Bottom Modules  ============ */
+
+.elements-bot div.module {
+	color: #9d9d9d;
+	text-shadow: #000 1px 1px 0;
+}
+
+.elements-bot div.module div.pad {
+	padding: 0px;
+}
+
+.elements-bot div.module h3 {
+	color: #fff;
+	background: url(../images/orange/bot_modheading.png) repeat-x 0 bottom;
+	text-shadow: #000 1px 1px 0;
+}
+
+.elements-bot div.module a {
+	color: #fe6900;
+	text-shadow: none;
+}
+
+/* @end */
+
+a.saleButton {
+	font-size: 18px;
+	padding: 8px 15px;
+	margin: 0px auto;
+	display: block;
+	background: url(../images/orange/S1.png) repeat-x center top;
+	width: 100px;
+	text-align: center;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: none;
+	text-decoration: none;
+	text-shadow: #0d3b4d 0px -1px 1px;
+	box-shadow: 0px 1px 2px #121212;
+	-moz-box-shadow: 0px 1px 2px #121212;
+	-webkit-box-shadow: 0px 1px 2px #121212;
+	-khtml-box-shadow: 0px 1px 2px #121212;
+}
+
+a.saleButton:hover {
+	background: url(../images/orange/S1.png) repeat-x center -20px;
+}
+
+a.saleButton span {
+	font-size: 13px;
+	color: #fecdad;
+	display: block;
+}
+
+#container .nivoSlider .nivo-controlNav a {
+	background: url(../images/orange/bullet.png) no-repeat center center;
+}
+
+#container .nivoSlider .nivo-controlNav a.active {
+	background: url(../images/orange/bullet_active.png) no-repeat center center;
+}
+
+#container .nivo-caption p strong {
+	color: #ff6d0f;
+}
