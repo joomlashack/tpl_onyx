@@ -341,7 +341,7 @@ div.module a {
 div.moduleS1 {
 	color: #f4f4f4;
 	text-shadow: #5f0001 1px 1px 0;
-	background: url(../images/red/S1.png) repeat-x center top;
+	background: #600 url(../images/red/S1.png) repeat-x center top;
 	box-shadow: 0px 4px 4px #161616;
 	-webkit-box-shadow: 0px 4px 4px #161616;
 	-moz-box-shadow: 0px 4px 4px #161616;
@@ -373,7 +373,7 @@ div.moduleS1 a {
 div.moduleS2 {
 	color: #ccc;
 	text-shadow: #0a374c 1px 1px 0;
-	background: url(../images/red/S2.png) repeat-x center top;
+	background: #000 url(../images/red/S2.png) repeat-x center top;
 	box-shadow: 0px 4px 4px #161616;
 	-webkit-box-shadow: 0px 4px 4px #161616;
 	-moz-box-shadow: 0px 4px 4px #161616;
@@ -405,7 +405,7 @@ div.moduleS2 a {
 div.moduleS3 {
 	color: #696969;
 	text-shadow: #e9e9e9 1px 1px 0;
-	background: url(../images/red/S3.png) repeat-x center top;
+	background: #ccc url(../images/red/S3.png) repeat-x center top;
 	box-shadow: 0px 4px 4px #161616;
 	-webkit-box-shadow: 0px 4px 4px #161616;
 	-moz-box-shadow: 0px 4px 4px #161616;
