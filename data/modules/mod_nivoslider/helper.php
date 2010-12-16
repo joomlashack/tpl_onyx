@@ -10,19 +10,18 @@ defined('_JEXEC') or die('Restricted access');
 
 class modNivoSliderHelper
 {
-	var $controlNavThumbsReplace;
-	var $dirs;
+	protected $controlNavThumbsReplace;
+	protected $dirs;
 	
-	function render(& $params)
+	function render(&$params)
 	{
-		global $mainframe;
 		$customStyle = '';
-		$document = & JFactory :: getDocument();
-		$URLOriginal = modNivoSliderHelper :: getOverrideURL();
+		$document = & JFactory::getDocument();
+		$URLOriginal = $this->getOverrideURL();
 		$module_base = $URLOriginal . 'modules/mod_nivoslider/assets/';
 		if ($params->get('jQuery', '1'))
-			JHTML :: script('jquery.js', $module_base);
-		JHTML :: script('jquery.nivo.slider.js', $module_base);
+			JHTML::script('jquery.js', $module_base);
+		JHTML::script('jquery.nivo.slider.js', $module_base);
 		$moduleclassSfx = 'ShackSlider';
 		if ($params->get('moduleclassSfx', ''))
 			$moduleclassSfx = $params->get('moduleclassSfx', '');
@@ -84,13 +83,13 @@ class modNivoSliderHelper
 		if ($subDir)
 		{
 			$this->dirs = array();
-			modNivoSliderHelper :: subdirs($imagesDir);
+			$this->subdirs($imagesDir);
 			$imagesDir = $this->dirs;
 		} 
 			else
 				$imagesDir = array($imagesDir);
 
-		$images = modNivoSliderHelper :: getImages($imagesDir);
+		$images = $this->getImages($imagesDir);
 		if (!$images)
 			return false;
 		list($width, $height, $type, $attr) = getimagesize($images[0]);
@@ -132,9 +131,9 @@ class modNivoSliderHelper
 		}
 		$html .= '</div></div>';
 		if ($display == true)
-			echo $html;
+			return $html;
 		else
-			echo '&nbsp;';
+			return '&nbsp;';
 	}
 
 	function subdirs($dir)

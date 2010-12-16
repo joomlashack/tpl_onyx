@@ -8,4 +8,9 @@
  */
 defined('_JEXEC') or die( 'Restricted access' );
 require_once (dirname(__FILE__).DS.'helper.php');
+
+$helper = new modNivoSliderHelper();
+
+$html = $helper->render($params);
+
 require(JModuleHelper::getLayoutPath('mod_nivoslider'));

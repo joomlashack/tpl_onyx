@@ -1,125 +1,18 @@
 <?xml version="1.0" ?>
-<project name="Builder" default="build">
+<project name="Onyx" default="build">
 
-	<property file="../global.properties" />
-	<property file="build.properties" />
-	<xmlproperty file="trunk/templateDetails.xml" keepRoot="false" />
-
-	<!-- Custom Tasks -->
-	<taskdef name="joomladump" classname="phing.tasks.js.JsJoomladumpTask" />
-
-
-	<!--
-		Main Builder
-		Handles calling subtasks
-	-->
-	<target name="build">
-		<phingcall target="nivo" />
-		<phingcall target="template" />
-		<phingcall target="quicklauncher" />
-		<phingcall target="zipper" />
-		<!--<phingcall target="svndeploy" />-->
-	</target>
-
-
-	<!-- Nivo Slider -->
-	<target name="nivo">
-		<mkdir dir="${path.tpl}" />
-		<copy todir="${path.tpl}" overwrite="true">
+	<!-- Builds the Nivo Slider -->
+	<target name="template">
+		<mkdir dir=".nivo" />
+		<copy todir=".nivo" overwrite="true">
 			<fileset dir="data/modules/mod_nivoslider" />
 		</copy>
-		<zip destfile="${path.packages}mod_nivoslider.zip" basedir="${path.tpl}" />
-		<delete dir="${path.tpl}" />
+		<zip destfile="mod_nivoslider.zip" basedir=".nivo" />
+		<delete dir=".nivo" />
 	</target>
-
-
-	<!--
-		Template Zip Task
-		This compiles and zips the template
-	-->
-	<target name="template">
-		<mkdir dir="${path.tpl}" />
-		<!-- Copy in framework -->
-		<if>
-			<equals arg1="${tpl.wright}" arg2="1" />
-			<then>
-				<copy todir="${path.tpl}" overwrite="true">
-					<fileset dir="${wright.path}" />
-				</copy>
-			</then>
-		</if>
-
-		<copy todir="${path.tpl}" overwrite="true">
-			<fileset dir="trunk" />
-		</copy>
-		
-		<delete file="${tpl.folder}.zip" />
-		<zip destfile="${path.packages}${tpl.folder}.zip" basedir="${path.tpl}" />
-		<delete dir="${path.tpl}" />
-	</target>
-
-
-	<!--
-		Quick Launcher Task
-		If tpl.ql is true, it will zip a quicklauncher
-	-->
-	<target name="quicklauncher">
-		<if>
-			<equals arg1="${tpl.ql}" arg2="1" />
-			<then>
-				<mkdir dir="${path.ql}" />
-				<unzip file="${ql.path}" todir="${path.ql}" />
-				<unzip file="${path.packages}${tpl.folder}.zip" todir="${path.ql}/templates/${tpl.folder}" />
-				<copy todir="${path.ql}" overwrite="true">
-					<fileset dir="data" />
-				</copy>
-				<joomladump database="${tpl.folder}" tofile="${path.ql}/installation/sql/mysql/sample_data.sql" prefix="jsres_" />
-				<zip destfile="${path.packages}${tpl.folder}_quicklauncher.zip" basedir="${path.ql}" />
-				<delete dir="${path.ql}" />
-			</then>
-		</if>
-	</target>
-
-
-	<!--
-		Zipper Task
-		This compiles and zips the final package
-	-->
+	
 	<target name="zipper">
-		<mkdir dir="${path.zip}" />
-		
-		<copy file="${path.packages}${tpl.folder}.zip" tofile="${path.zip}/template/${tpl.folder}.zip" overwrite="true" />
-
-		<copy file="${path.packages}${tpl.folder}_quicklauncher.zip" tofile="${path.zip}/quicklauncher/${tpl.folder}_quicklauncher.zip" overwrite="true" />
-
-		<if>
-			<equals arg1="${tpl.ql}" arg2="1" />
-			<then>
-				<copy todir="${path.zip}/sources" overwrite="true">
-					<fileset dir="sources" />
-				</copy>
-			</then>
-		</if>
-
-		<delete file="${tpl.folder}_UNZIP.zip" />
-		<zip destfile="${path.packages}${tpl.folder}_UNZIP.zip" basedir="${path.zip}" />
-		<delete dir="${path.zip}" />
-	</target>
-
-
-	<!--
-		SVN Deploy Task
-		If tpl.deploy is true, it will commit files to repo
-	-->
-	<target name="svndeploy">
-		<propertyprompt propertyName="tpl.deploy" defaultValue="0" promptText="Do you want to commit this to svn?: " />
-		<if>
-			<equals arg1="${tpl.deploy}" arg2="1" />
-			<then>
-				<propertyprompt propertyName="svn.message" defaultValue="Committing new packages" promptText="SVN Comment: " />
-				<svncommit svnpath="${svn.path}" username="${svn.user}" password="${svn.pass}" nocache="true" workingcopy="${path.base}" message="${svn.message}" />
-			</then>
-		</if>
+		<copy file="mod_nivoslider.zip" tofile="${path.zip}/nivo_slider/mod_nivoslider.zip" overwrite="true" />
 	</target>
 	
 </project>
