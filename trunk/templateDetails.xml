@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install version="1.5" type="template" method="upgrade">
 	<name>JS_Onyx</name>
-	<version>1.0</version>
+	<version>1.1</version>
 	<creationDate>November 2010</creationDate>
 	<author>JoomlaShack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
