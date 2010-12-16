@@ -5,7 +5,7 @@
 	<target name="template">
 		<mkdir dir=".nivo" />
 		<copy todir=".nivo" overwrite="true">
-			<fileset dir="data/modules/mod_nivoslider" />
+			<fileset dir="files/data/modules/mod_nivoslider" />
 		</copy>
 		<zip destfile="mod_nivoslider.zip" basedir=".nivo" />
 		<delete dir=".nivo" />
