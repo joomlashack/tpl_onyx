@@ -262,7 +262,10 @@ div.caption,div.caption.red,div.caption.green,div.caption.blue {
 #menu ul li.active ul li.active a {
 	color: #FFF;
 }
-
+#menu ul li.active ul li.active,
+#menu ul li.active ul li.active ul li.active, {
+	background-image: none;
+}
 #menu ul li.active ul li.active li a {
 	color: #FFF;
 }
