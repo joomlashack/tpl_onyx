@@ -564,6 +564,11 @@ a.saleButton span {
 	color: #f4f4f4;
 	text-shadow: 1px 1px 0px #000;
 }
+#container .nivoSlider {
+	-moz-box-shadow: 0 0 10px #939393;
+	-webkit-box-shadow: 0 0 10px #939393;
+}
+
 
 /* Joomla Category Tables */
 
