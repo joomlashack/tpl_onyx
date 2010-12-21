@@ -241,6 +241,13 @@ a:hover {
 	font-weight: normal;
 }
 
+#container h6 {
+	color: #bf0002;
+	margin: 5px 0 5px 0;
+	padding: 0;
+}
+
+
 .elements-bot {
 	background: url(../images/red/teaserbg.png) repeat center bottom;
 	border-top: 8px solid #1d1d1d;
@@ -336,6 +343,14 @@ div.module a {
 	text-shadow: none;
 }
 
+div.module li {
+	list-style: none;
+	background: url(../images/red/bullet_S3.png) no-repeat 0 .4em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
 /* ============  S1  ============ */
 
 div.moduleS1 {
@@ -367,6 +382,15 @@ div.moduleS1 a {
 	color: #e73639;
 	text-shadow: none;
 }
+
+div.moduleS1 li {
+	list-style: none;
+	background: url(../images/red/bullet_S1.png) no-repeat 0 .3em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
 
 /* ============  S2  ============ */
 
@@ -400,6 +424,15 @@ div.moduleS2 a {
 	text-shadow: none;
 }
 
+div.moduleS2 li {
+	list-style: none;
+	background: url(../images/red/bullet_S2.png) no-repeat 0 .3em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
+
 /* ============  S3  ============ */
 
 div.moduleS3 {
@@ -430,6 +463,14 @@ div.moduleS3 h3 {
 div.moduleS3 a {
 	color: #c20003;
 	text-shadow: none;
+}
+
+div.moduleS3 li {
+	list-style: none;
+	background: url(../images/red/bullet_S3.png) no-repeat 0 .3em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
 }
 
 /* ============  Bottom Modules  ============ */

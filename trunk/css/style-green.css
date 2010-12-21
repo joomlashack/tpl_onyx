@@ -336,6 +336,14 @@ div.module a {
 	color: text-shadow: none;
 }
 
+div.module li {
+	list-style: none;
+	background: url(../images/green/bullet_S3.png) no-repeat 0 .4em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
 /* ============  S1  ============ */
 
 div.moduleS1 {
@@ -367,6 +375,15 @@ div.moduleS1 a {
 	color: #d1e9a8;
 	text-shadow: none;
 }
+
+div.moduleS1 li {
+	list-style: none;
+	background: url(../images/green/bullet_S1.png) no-repeat 0 .3em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
 
 /* ============  S2  ============ */
 
@@ -401,6 +418,15 @@ div.moduleS2 a {
 	text-shadow: none;
 }
 
+div.moduleS2 li {
+	list-style: none;
+	background: url(../images/green/bullet_S2.png) no-repeat 0 .3em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
+
 /* ============  S3  ============ */
 
 div.moduleS3 {
@@ -433,6 +459,15 @@ div.moduleS3 a {
 	color: #6bab00;
 	text-shadow: none;
 }
+
+div.moduleS3 li {
+	list-style: none;
+	background: url(../images/green/bullet_S3.png) no-repeat 0 .3em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
 
 /* ============  Bottom Modules  ============ */
 

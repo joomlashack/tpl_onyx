@@ -176,6 +176,13 @@ a:hover {
 p.smalldesc {
 	color: #333;
 }
+span.caption-title {
+    background: none repeat scroll 0 0 #ECECEC;
+}
+div.caption,div.caption.red,div.caption.green,div.caption.blue {
+	color: #616161;
+}
+
 
 /* @group Main Menu */
 
@@ -357,7 +364,7 @@ div.module a {
 
 div.module li {
 	list-style: none;
-	background: url(../images/lightorange/bullet_S3.png) no-repeat 0 .3em;
+	background: url(../images/lightorange/bullet_S3.png) no-repeat 0 .4em;
 	padding: 0px 0px 0px 16px;
 	margin: 0;
 	line-height: 150%;
@@ -365,7 +372,7 @@ div.module li {
 
 .elements-bot div.module li {
 	list-style: none;
-	background: url(../images/lightorange/bullet_footer.png) no-repeat 0 .3em;
+	background: url(../images/lightorange/bullet_footer.png) no-repeat 0 .4em;
 	padding: 0px 0px 0px 16px;
 	margin: 0;
 	line-height: 150%;

@@ -326,6 +326,14 @@ div.module div.pad {
 	padding: px;
 }
 
+div.module li {
+	list-style: none;
+	background: url(../images/blue/bullet_S3.png) no-repeat 0 .4em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
 div.module h3 {
 	color: #ebebeb;
 	background: url(../images/blue/divider.png) repeat-x 0 bottom;
@@ -368,6 +376,15 @@ div.moduleS1 a {
 	text-shadow: none;
 }
 
+div.moduleS1 li {
+	list-style: none;
+	background: url(../images/blue/bullet_S1.png) no-repeat 0 .3em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
+
 /* ============  S2  ============ */
 
 div.moduleS2 {
@@ -401,6 +418,15 @@ div.moduleS2 a {
 	text-shadow: none;
 }
 
+div.moduleS2 li {
+	list-style: none;
+	background: url(../images/blue/bullet_S2.png) no-repeat 0 .3em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
+
+
 /* ============  S3  ============ */
 
 div.moduleS3 {
@@ -433,6 +459,14 @@ div.moduleS3 a {
 	text-shadow: none;
 }
 
+
+div.moduleS3 li {
+	list-style: none;
+	background: url(../images/blue/bullet_S3.png) no-repeat 0 .3em;
+	padding: 0px 0px 0px 16px;
+	margin: 0;
+	line-height: 150%;
+}
 /* ============  Bottom Modules  ============ */
 
 .elements-bot div.module {
