@@ -160,7 +160,7 @@ a:hover {
 	color: #FFF;
 }
 #menu ul li.active ul li.active,
-#menu ul li.active ul li.active ul li.active, {
+#menu ul li.active ul li.active ul li.active {
 	background-image: none;
 }
 #menu ul li.active ul li.active li a {
@@ -242,6 +242,12 @@ a:hover {
 
 #container h3,#container h4 {
 	font-weight: normal;
+}
+
+#container h6 {
+	color: #609500;
+	font-weight: normal;
+	font-size: 1.15em;
 }
 
 .elements-bot {

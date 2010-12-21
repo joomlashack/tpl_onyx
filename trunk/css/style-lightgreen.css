@@ -154,8 +154,11 @@ a:hover {
 	font-weight: normal;
 }
 
+
 #container h6 {
 	color: #5d9100;
+	font-weight: normal;
+	font-size: 1.15em;
 }
 
 .elements-bot {
@@ -263,7 +266,7 @@ div.caption,div.caption.red,div.caption.green,div.caption.blue {
 	color: #FFF;
 }
 #menu ul li.active ul li.active,
-#menu ul li.active ul li.active ul li.active, {
+#menu ul li.active ul li.active ul li.active {
 	background-image: none;
 }
 #menu ul li.active ul li.active li a {
