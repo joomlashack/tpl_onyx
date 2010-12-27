@@ -70,7 +70,7 @@
 		<param name="headline" type="text" default="Onyx" label="Site Title" size="30" description="The site title is rendered for SEO purposes so it is important to customize this regardless of 'text' or 'graphic' Header Mode (configured above)."></param>
 		<param name="tagline" type="text" default="by Joomlashack" label="Tagline" size="30" description="The site description is rendered for SEO purposes so it is important to custommize this regardless of 'text' or 'graphic' Header Mode (configured above)."></param>
 		<param type="spacer" default="&lt;b&gt;Styling Options&lt;/b&gt;" />
-		<param name="style" type="styles" default="light" label="Template Color Style" description="Select which of the style variations you wish to use." />
+		<param name="style" type="styles" default="blue" label="Template Color Style" description="Select which of the style variations you wish to use." />
 		<param name="body_font" type="typography" default="helvetica" label="Body Font" description="Select the default font face for the body" />
 		<param name="header_font" type="typography" default="verdana" label="Heading Font" description="Select the default font face for the headers" />
 		<param name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="Columns" description="You can set the default widths and arrange the main columns. Any columns that are unused will just be hidden and the main column will be widened." />
