@@ -1,5 +1,3 @@
-/* @override http://demotemplates.joomlashack.com/onyx/templates/js_onyx/css/1_template.css */
-
 /* @group Toolbar */
 
 .inside {
@@ -268,10 +266,6 @@
 	margin: 0 0 0 15px;
 }
 
-h2.contentheading {
-	float: left;
-}
-
 .contentpaneopen, .blog {
 	width: 100%;
 }
@@ -333,7 +327,6 @@ h2.contentheading {
 }
 
 .iteminfo {
-	clear: both;
 	padding: 0px 0 10px 0;
 	height: 15px;
 }
