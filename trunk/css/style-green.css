@@ -328,7 +328,6 @@ div.module {
 	color: #ccc;
 	text-shadow: #000 1px 1px 0;
 	margin-bottom: 15px;
-	height: 1%;
 }
 
 div.module div.pad {
@@ -367,7 +366,6 @@ div.moduleS1 {
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	margin-bottom: 15px;
-	height: 1%;
 }
 
 div.moduleS1 div.pad {
@@ -409,7 +407,6 @@ div.moduleS2 {
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	margin-bottom: 15px;
-	height: 1%;
 }
 
 div.moduleS2 div.pad {
@@ -451,7 +448,6 @@ div.moduleS3 {
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	margin-bottom: 15px;
-	height: 1%;
 }
 
 div.moduleS3 div.pad {
