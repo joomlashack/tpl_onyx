@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install version="1.5" type="template" method="upgrade">
 	<name>JS_Onyx</name>
-	<version>1.2</version>
+	<version>1.3</version>
 	<creationDate>November 2010</creationDate>
-	<author>JoomlaShack</author>
+	<author>Casey Lee for Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
-	<copyright>Copyright JoomlaShack 2010. All rights reserved</copyright>
+	<copyright>Copyright Simple Themes LLC 2010. All rights reserved</copyright>
 	<license>Commercial license - single domain use only</license>
 	<description>
 		<![CDATA[
