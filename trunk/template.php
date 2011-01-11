@@ -61,9 +61,8 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 		</div>
 		<?php endif; ?>
 		<w:module type="single" name="above-content" chrome="wrightCSS3" />
-		
+			<jdoc:include type="message" />
 			<w:content above="false" below="false"/>
-			
 		<w:module type="single" name="below-content" chrome="wrightCSS3" />
 		</section>
 		<aside id="sidebar1">
