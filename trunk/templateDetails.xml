@@ -84,7 +84,7 @@
 	</params>
 
 	<config>
-		<fields addfieldpath="/templates/js_onyx/wright/parameters/joomla_1.6">
+		<fields name="params" addfieldpath="/templates/js_onyx/wright/parameters/joomla_1.6">
 			<fieldset name="basic">
 				<field type="spacer" default="&lt;b&gt;Header Options&lt;/b&gt;" />
 				<field name="headertype" type="list" default="text" label="Header Type" description="Header display method: Image should be 32-bit transparent PNG or must match body background image.">
@@ -117,8 +117,8 @@
 				<field name="footerscript" type="textarea" default="" label="Footer Script" description="If you need to add scripts to your footer (like Google Analytics tracking code), you should enter them here." rows="5" cols="50" />
 				<field name="rebrand" type="rebrand" default="no" label="Remove Branding" description="Our templates come with some branding. If you wish to remove it please purchase the rights to remove our branding by clicking on the link provided before disabling it here. Rebranding is handled as an honor system, we don't monitor or verify if you have purchased it, so please be respectful of our licensing terms. " />
 				<field name="mootools" type="radio" default="1" label="Enable Mootools" description="Turn off Joomla core Mootools.js. This will speed up yor site if you are not using frontend editing features.">
-					<option value="0">NO</option>
-					<option value="1">YES</option>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
 				</field>
 				<field name="helper" type="help" default="onyx" label="Need Help?" />
 			</fieldset>
