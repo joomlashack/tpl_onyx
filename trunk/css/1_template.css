@@ -323,10 +323,11 @@
 .buttonheading {
 	font-size: 8px;
 	padding: 0 2px;
-	float: right;
-	padding-top: 24px;
 	margin-bottom: 0;
+	position: absolute;
+	right: 0px;
 }
+
 
 .buttonheading img {
 	margin: 0 0 0 5px;
