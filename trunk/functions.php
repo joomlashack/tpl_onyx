@@ -58,7 +58,7 @@ class BuildHeader {
 		$menuposition	= $this->document->params->get( 'menuposition', 'right' );
 		if ($menuposition == "right") {
 		$menu_width		= 950 - $header_width;
-		echo '<w:nav wrapclass="right" class="t"/>';
+		echo '<w:nav wrapclass="right" class="t" />';
 		} elseif ($menuposition == "below") {
 		$menu_width		= "950";
 		echo '<w:nav wrapclass="below" class="t" />';
