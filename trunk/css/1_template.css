@@ -465,7 +465,7 @@ table.contenttoc a {
 	padding: 5px 10px;
 }
 
-.readon, .readmore {
+.readon {
 	display: block;
 	float: right;
 	font-size: 12px;
