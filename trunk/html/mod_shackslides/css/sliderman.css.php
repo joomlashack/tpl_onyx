@@ -16,8 +16,8 @@
 	color:#FFF;
 	text-align: left;
 	padding: 3px;
-	font-size: .75em;
-	line-height: 16px;
+	font-size: .8em;
+	line-height: 14px;
 }
 
 .shackSlider #<?php echo $params->get('navigation_container', $defaults['navigation_container']) ?> {
@@ -26,6 +26,9 @@
 	padding-bottom: 3px;
 	position:relative;
 }
+
+div.shackSlider {background: none;}
+div.slideTitle {text-shadow: none;}
 
 #<?php echo $params->get('navigation_container', $defaults['navigation_container']) ?> a:link, #<?php echo $params->get('navigation_container', $defaults['navigation_container']) ?> a:active, #<?php echo $params->get('navigation_container', $defaults['navigation_container']) ?> a:visited, #<?php echo $params->get('navigation_container', $defaults['navigation_container']) ?> a:hover{
 	background: url(<?php echo JURI::base() ?>templates/<?php echo $app->getTemplate() ?>/html/mod_shackslides/images/item.png) no-repeat center center;
