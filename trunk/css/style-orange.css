@@ -534,6 +534,6 @@ a.saleButton span {
 	background: url(../images/orange/bullet_active.png) no-repeat center center;
 }
 
-#container .nivo-caption p strong {
+#container .nivo-caption p strong, div.slideTitle strong {
 	color: #ff6d0f;
 }

@@ -565,7 +565,7 @@ a.saleButton span {
 	background: url(../images/lightblue/bullet_active.png) no-repeat center center;
 }
 
-#container .nivo-caption p strong {
+#container .nivo-caption p strong, div.slideTitle strong {
 	color: #4192cf;
 	text-shadow: 1px 1px 0px #000;
 }
