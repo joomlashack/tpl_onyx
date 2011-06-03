@@ -172,7 +172,7 @@ a:hover {
 }
 
 .iteminfo {
-	background: url(../images/lightorange/divider.png) repeat-x center bottom;
+/*	background: url(../images/lightorange/divider.png) repeat-x center bottom; */
 }
 
 p.smalldesc {
@@ -586,21 +586,127 @@ a.saleButton span {
 
 /* Joomla Category Tables */
 
-table.category th,th.sectiontableheader {
+table.category th, th.sectiontableheader {
 	background-color: #e0e0e0;
 	border-bottom: 1px solid #cbcbcb;
 	border-top: 1px solid #cbcbcb;
 }
-
-tr.sectiontableentry1 td,
-td.sectiontableentry1 {
+tr.sectiontableentry1 td, td.sectiontableentry1, tr.cat-list-row1 td, tr.odd td {
 	background: #ededed;
 	border-bottom: 1px solid #e0e0e0;
 }
-
-tr.sectiontableentry2 td,
-td.sectiontableentry2 {
+tr.sectiontableentry2 td, td.sectiontableentry2, tr.cat-list-row0 td, tr.even td {
 	background: #f2f2f2;
 	border-bottom: 1px solid #dadada;
 }
-
+/* Category List */
+div.categories-list {
+	line-height: 200%;
+	background-color: #ededed;
+	padding: 10px;
+	margin-bottom:20px;
+	border: 1px solid #e0e0e0;
+}
+div.categories-list ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+div.categories-list li {
+	padding:10px;
+	margin:10px;
+	list-style:none;
+	background: #f2f2f2;
+	border: 1px solid #dadada;
+}
+div.categories-list span.article-count {
+	font-size:60%;
+}
+div.categories-list li li {
+	background: #f2f2f2;
+	border: 1px solid #dadada;
+}
+div.jcat-children {
+	line-height: 200%;
+	background-color: #ededed;
+	padding: 10px;
+	margin-bottom:20px;
+	border: 1px solid #e0e0e0;
+}
+div.jcat-children ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+div.jcat-children li {
+	padding:0;
+	margin:0 0 10px 10px;
+	list-style:none;
+}
+/* Archive List */
+ul#archive-list {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+ul#archive-list li {
+	padding:10px;
+	margin:10px;
+	list-style:none;
+	background: #f2f2f2;
+	border: 1px solid #dadada;
+}
+/* Contact Form */
+#contact-slider .panel {
+	padding:10px;
+	margin:10px;
+	list-style:none;
+	background: #f2f2f2;
+	border: 1px solid #dadada;
+}
+/* Weblinks */
+.weblinks {
+	width:100%;
+}
+.weblinks ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.weblinks li {
+	padding:10px;
+	margin:10px;
+	list-style:none;
+	background: #f2f2f2;
+	border: 1px solid #dadada;
+}
+/* User */
+.login, .logout, .registration, .remind, .reset, .profile, .profile-edit, .search {
+	padding:10px;
+	margin:10px;
+	list-style:none;
+	background: #f2f2f2;
+	border: 1px solid #dadada;
+}
+.login-fields {
+	float:left;
+	margin:0 5px 0 0;
+}
+.search ol {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.search ol li {
+	padding:10px;
+	margin:0 0 20px 0;
+}
+.search ol li h4 {
+	margin:0;
+	display:inline;
+}
+.search .highlight {
+	font-size:15px;
+	display:inline-block;
+	padding:0 5px;
+}
