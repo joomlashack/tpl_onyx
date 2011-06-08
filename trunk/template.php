@@ -85,7 +85,6 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 </div>
 <?php endif; ?>
 
-<?php if (($this->countModules('user8')) || ($this->countModules('footer'))) : ?>
 <div id="footer" class="container_12 clearfix">
 		<?php if ($this->countModules('user8')) : ?>
 		<div id="link" class="grid_8">
@@ -95,7 +94,6 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 			<w:footer />
 		<div class="clear"></div>
 </div>
-<?php endif; ?>
 <?php echo $this->params->get("footerscript",""); ?>
 </body>
 </html>
