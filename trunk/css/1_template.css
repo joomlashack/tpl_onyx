@@ -388,6 +388,14 @@ span.content_rating, .leading span.content_rating {
 	display: block;
 	text-align: center;
 }
+
+a.joomlashack {
+text-indent: -1000em;
+	background:url(../images/jscright.png) no-repeat;
+	width: 960px;
+	display:inline-block;
+}
+
 table.contenttoc {
 	width: 35%;
 	float: right;
