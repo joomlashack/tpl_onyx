@@ -952,4 +952,12 @@ ul#archive-list li {
 	display:inline-block;
 	padding:0 5px;
 }
+.profile-edit label, .contact-form label, .registration label {
+display:block;
+}
+div a.joomlashack {
+width:100px;
+margin:0 auto;
+display:block;	
+}
 /* @end */
