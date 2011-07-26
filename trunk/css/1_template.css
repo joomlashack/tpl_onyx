@@ -35,7 +35,7 @@
 }
 
 /* Force 1.7 to hide label and background on search module when used in user4 */
-#toolbar div.search {border: none;background: none;}
+#toolbar div.search {border: none;background: none;margin:0;padding:0;}
 #toolbar div.search label {display: none}
 /* @end */
 
