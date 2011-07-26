@@ -33,6 +33,10 @@
 	-webkit-border-radius: 20px;
 	-khtml-border-radius: 20px;
 }
+
+/* Force 1.7 to hide label and background on search module when used in user4 */
+#toolbar div.search {border: none;background: none;}
+#toolbar div.search label {display: none}
 /* @end */
 
 /* @group Header */
