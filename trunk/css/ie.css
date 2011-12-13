@@ -2,7 +2,7 @@ body.msie-7 #menu ul li a {line-height: 46px;}
 body.msie-7 #menu ul li a {line-height: 46px;}
 body.msie-7 #menu ul ul a {height:24px;line-height: 24px;}
 #breadcrumbs {line-height: 24px;border-radius:4px;behavior: url('templates/js_onyx/css/PIE.php');}
-#search .inputbox {border-radius:20px;behavior: url('templates/js_onyx/css/PIE.php');position: absolute;top: -4px;right: 0px;}
+#search .inputbox {border-radius:20px;behavior: url('templates/js_onyx/css/PIE.php'); /*position: absolute; */ top: -4px;right: 0px;}
 
 .moduleS1,.moduleS2,.moduleS3,.moduleS4 {box-shadow:0px 4px 4px #161616;border-radius:4px;behavior: url('templates/js_onyx/css/PIE.php');position: relative;}
 
