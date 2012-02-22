@@ -4,6 +4,13 @@
 */
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
+
+
+// WrightTemplate class, for special settings on Wright
+class WrightTemplate extends WrightTemplateBase {
+	public $suffixes = true;  // allows stacked suffixes
+}
+
 ?>
 <doctype>
 <html>
@@ -34,8 +41,8 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 	<!-- BEGIN HEADER -->
 	<header id="header" class="container_12 clearfix">
 		<?php // displays the logo
-		BuildHeader::getHeader();
-		BuildHeader::getMenu();		
+		BuildHeader::getHeader($this);
+		BuildHeader::getMenu($this);		
 		?>		
 		<div class="clear"></div>
 	</header>

@@ -957,7 +957,7 @@ ul#archive-list li {
 	padding:0 5px;
 }
 .profile-edit label, .contact-form label, .registration label {
-display:block;
+display:inline-block;
 }
 div a.joomlashack {
 width:100px;
