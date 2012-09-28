@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
-	<name>JS_Onyx</name>
+	<name>js_onyx</name>
 	<version>2.0.0</version>
 	<creationDate>September 2012</creationDate>
 	<author>Casey Lee for Joomlashack</author>
