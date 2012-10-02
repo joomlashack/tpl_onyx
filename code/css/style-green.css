@@ -203,11 +203,6 @@ a:hover {
 	-khtml-border-radius: 4px 4px 4px 4px;
 }
 
-#breadcrumbs img {
-	position: relative;
-	top: 4px;
-	padding: 0px 4px 0px 4px;
-}
 
 #container h1, #container .componentheading {
 	background: url(../images/green/divider.png) repeat-x center bottom;
