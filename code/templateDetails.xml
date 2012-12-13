@@ -2,8 +2,8 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>js_onyx</name>
-	<version>2.0.0</version>
-	<creationDate>September 2012</creationDate>
+	<version>2.0.1</version>
+	<creationDate>December 2012</creationDate>
 	<author>Casey Lee for Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
@@ -59,7 +59,6 @@
 					<option value="right">Right of Logo</option>
 				</field>
 				<field name="item_spacing" type="text" default="18" label="Menu Item Spacing" size="30" description="padding (in px) between menu items"></field>
-				<field name="logo" type="logo" default="template" label="Logo Image" description="If you chose to display a graphic header (above), you can select your logo from the images directory after you upload the image." />
 				<field name="header_width" type="text" default="250" label="Logo Width (px)" size="30" description="Logo Width (when header style = image)"></field>
 				<field name="header_height" type="text" default="60" label="Logo Height (px)" size="30" description="Logo Height (when header style = image"></field>
 				<field name="header_top_pad" type="text" default="10" label="Logo Top Padding" size="30" description="Adds margin to the top of your logo"></field>
