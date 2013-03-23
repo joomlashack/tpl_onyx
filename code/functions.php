@@ -27,7 +27,7 @@ class BuildHeader {
 			if ($logo == 'template') {
 			$background = JURI::base().'templates/'.$template->document->template.'/images/'.$style.'/logo.png';
 			} else {
-			$background = JURI::base().'images/'.$logo;
+			$background = JURI::base().'templates/'.$template->document->template.'/images/'.$logo;
 			}
 			
 			if ($headertype == "image") {
