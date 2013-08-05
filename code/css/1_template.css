@@ -997,10 +997,10 @@ img.caption{
 }
 
 body #sliderNav a{
-	background-image: url(../images/item.png);
-	background-repeat: no-repeat;
-	background-position: center center;
+	background: transparent url(../images/item.png) center center no-repeat;
+	font-size: 11px;
 	height: 24px !important;
+	line-height: 25px;
 	margin: 0;
 	padding: 0 !important;
 	width: 25px !important;
@@ -1021,6 +1021,7 @@ body #sliderNav a.sliderPrev{
 }
 body #sliderNav a.sliderPrev,
 body #sliderNav a.sliderNext{
+	text-indent: -9999px;
 	width: 49px !important;
 }
 body #sliderNav a.sliderNext{
