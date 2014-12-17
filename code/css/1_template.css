@@ -1079,6 +1079,22 @@ body #slider{
 	border-color: #000;
 }
 
+.items-more .nav-tabs {
+	list-style-type: none;
+}
+.items-more .nav-tabs > li{
+	background-position: 2px center;
+}
+
+.items-more .nav-tabs > li > a,
+.items-more .nav-tabs > li > a:hover,
+.items-more .nav-tabs > li > a:focus {
+	border: 0;
+}
+.items-more .nav-tabs > li:hover {
+	background-color: transparent;
+}
+
 .edit.item-page {
 	margin-top: 20px;
 }
