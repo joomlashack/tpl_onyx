@@ -1048,4 +1048,55 @@ body a.sliderPrev, body a.sliderNext{
 body #slider{
 	margin: 0 auto 10px auto;
 }
+
+#login-form, #mod-finder-searchform {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+}
+
+#login-form input, #mod-finder-searchform input{
+	border: 1px solid #000;
+	padding: 5px 15px;
+}
+#sidebar1 input, #sidebar2 input {
+	width: auto;
+}
+
+.nav-tabs {
+	border-bottom-color: #000;
+}
+
+.nav-tabs > li > a:hover{
+	background-color: #000;
+	border-color: #000;
+}
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:active,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a {
+	background-color: #000;
+	border-color: #000;
+}
+
+.edit.item-page {
+	margin-top: 20px;
+}
+
+.edit.item-page fieldset {
+	margin-top: 20px;
+}
+
+.edit.item-page #adminForm > .btn-toolbar {
+    *zoom: 1;
+}
+.edit.item-page #adminForm > .btn-toolbar:before,
+.edit.item-page #adminForm > .btn-toolbar:after {
+    display: table;
+    content: "";
+}
+.edit.item-page #adminForm > .btn-toolbar:after {
+	clear: both;
+}
+
 /* @end */
