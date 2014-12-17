@@ -96,7 +96,6 @@ a:hover {
 #breadcrumbs {
 	background: #F8F8F8 url(../images/lightred/bread_bg.png) repeat-x 0 0;
 	position: relative;
-	height: 30px;
 	line-height: 30px;
 	font-size: 12px;
 	margin: 5px 0px 10px 0px;
