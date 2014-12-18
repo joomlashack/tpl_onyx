@@ -1213,4 +1213,11 @@ dl#tabs dt:hover, dl#tabs dt.open, dl.tabs dt:hover, dl.tabs dt.open {
 .pane-slider.content{
 	padding: 10px;
 }
+
+.panel h3.pane-toggler-down {
+	box-shadow: none;
+}
+.panel h3.pane-toggler-down a {
+	color: #333;
+}
 /* @end */
