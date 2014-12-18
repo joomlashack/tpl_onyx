@@ -1065,6 +1065,7 @@ body #slider{
 }
 #sidebar1 input, #sidebar2 input {
 	width: auto;
+	max-width: 100%;
 }
 
 .nav-tabs {
@@ -1091,10 +1092,10 @@ body #slider{
 	border-color: transparent;
 }
 
-.items-more .nav-tabs {
+.items-more ol {
 	list-style-type: none;
 }
-.items-more .nav-tabs > li{
+.items-more ol > li{
 	background-position: 2px center;
 }
 
@@ -1103,18 +1104,21 @@ body #slider{
 .items-more .nav-tabs > li > a:focus {
 	border: 0;
 }
-.items-more .nav-tabs > li:hover {
+.items-more ol> li:hover {
 	background-color: transparent;
+	background-position: 2px center;
 }
 .items-more ol {
-	border-top-color: #000;
-	border-left-color: #000;
-	border-right-color: #000;
+	border-color: #000;
 }
 .items-more li {
 	border-bottom-color: #000;
 }
-
+.items-more h3 {
+	background-color: transparent;
+	border: 0;
+	color: inherit;
+}
 .edit.item-page {
 	margin-top: 20px;
 }
@@ -1135,6 +1139,7 @@ body #slider{
 	clear: both;
 }
 
+#mod-finder-searchform button,
 #finder-search button,
 ul.pagenav li a {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #333), color-stop(1, #000));
@@ -1171,5 +1176,41 @@ legend {
 
 .category [class*="cat-list-row"] .list.pull-left{
 	float: none;
+}
+
+#tabs + div.current, .tabs + div.current {
+	box-shadow: none;
+	border: 0;
+}
+
+dl#tabs dt, dl.tabs dt {
+	border-radius: 5px 5px 0 0;
+	border: 0;
+	box-shadow: none;
+	padding: 8px 17px;
+}
+
+dl#tabs dt h3, dl.tabs dt h3 {
+	font-size: 1em;
+}
+
+dl#tabs dt:hover, dl#tabs dt.open, dl.tabs dt:hover, dl.tabs dt.open {
+	background-color: #000;
+	border: 0;
+	box-shadow: none;
+}
+
+.panel h3 {
+	margin-left: 0;
+}
+#contact-slider.tabs {
+	border-bottom: 1px solid #000;
+}
+
+#contact-slider .panel {
+	padding: 0;
+}
+.pane-slider.content{
+	padding: 10px;
 }
 /* @end */
