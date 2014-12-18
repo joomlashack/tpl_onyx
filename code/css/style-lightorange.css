@@ -202,7 +202,8 @@ div.caption,div.caption.red,div.caption.green,div.caption.blue {
 	line-height: 28px;
 }
 
-#menu li a {
+#menu li a,
+#menu li span {
 	color: #FFF;
 	text-shadow: #b14000 0 -1px 0;
 }
