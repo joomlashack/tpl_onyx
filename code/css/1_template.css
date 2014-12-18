@@ -430,6 +430,11 @@ table.contenttoc a {
 	-khtml-border-radius: 10px;
 	background-color: #2e2e2e;
 }
+
+.readmore a {
+	text-decoration: none;
+}
+
 /* Custom Alignment Styles */
 
 img.centered, .centered, .center, .aligncenter {
@@ -1076,6 +1081,14 @@ body #slider{
 .nav-tabs > li.active > a {
 	background-color: #000;
 	border-color: #000;
+}
+
+.nav-stacked  {
+	border: 0;
+}
+.nav-stacked > li a:hover {
+	background-color: transparent;
+	border-color: transparent;
 }
 
 .items-more .nav-tabs {
