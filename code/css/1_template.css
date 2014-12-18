@@ -1106,6 +1106,14 @@ body #slider{
 .items-more .nav-tabs > li:hover {
 	background-color: transparent;
 }
+.items-more ol {
+	border-top-color: #000;
+	border-left-color: #000;
+	border-right-color: #000;
+}
+.items-more li {
+	border-bottom-color: #000;
+}
 
 .edit.item-page {
 	margin-top: 20px;
@@ -1127,4 +1135,41 @@ body #slider{
 	clear: both;
 }
 
+#finder-search button,
+ul.pagenav li a {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #333), color-stop(1, #000));
+	background: -moz-linear-gradient(top center, #333 0%, #000 100%);
+    border-radius: 11px;
+    border: 1px solid #000;
+    color: #FFF;
+    cursor: pointer;
+    font: bold 12px/1.2 Arial,sans-serif;
+    padding: 5px 15px;
+    text-shadow: 0px 1px 1px #000;
+}
+
+.category.list-striped {
+	border-bottom-color: #333;
+}
+
+dl > dd + dt, dl > dd + dt + dd {
+	border-top-color: #333;
+}
+legend {
+	color: inherit;
+	border-bottom-color: #333;
+}
+.form-actions {
+	background-color: transparent;
+	border: 0;
+}
+
+.accordion-group {
+	border-color: #333;
+	background-color: #333;
+}
+
+.category [class*="cat-list-row"] .list.pull-left{
+	float: none;
+}
 /* @end */
