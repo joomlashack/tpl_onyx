@@ -331,7 +331,7 @@ div.module li {
 	line-height: 150%;
 }
 
-div.module ol[type]s li {
+div.module ol[type] li {
 	background: none;
 	list-style: inherit;
 }
