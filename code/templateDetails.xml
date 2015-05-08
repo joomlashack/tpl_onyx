@@ -3,11 +3,11 @@
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>js_onyx</name>
 	<version>2.0.3</version>
-	<creationDate>December 2014</creationDate>
+	<creationDate>May 2015</creationDate>
 	<author>Casey Lee for Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
-	<copyright>Copyright Simple Themes LLC 2010. All rights reserved</copyright>
+	<copyright>Copyright Simple Themes LLC 2015. All rights reserved</copyright>
 	<license>Commercial license - single domain use only</license>
 	<description>
 		<![CDATA[
