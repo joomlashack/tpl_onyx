@@ -331,6 +331,11 @@ div.module li {
 	line-height: 150%;
 }
 
+div.module ol[type]s li {
+	background: none;
+	list-style: inherit;
+}
+
 div.module h3 {
 	color: #ebebeb;
 	background: url(../images/blue/divider.png) repeat-x 0 bottom;
