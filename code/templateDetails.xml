@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>js_onyx</name>
-	<version>2.0.3</version>
-	<creationDate>May 2015</creationDate>
+	<version>2.0.2</version>
+	<creationDate>April 2016</creationDate>
 	<author>Casey Lee for Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
-	<copyright>Copyright Simple Themes LLC 2015. All rights reserved</copyright>
+	<copyright>Copyright Simple Themes LLC 2016. All rights reserved</copyright>
 	<license>Commercial license - single domain use only</license>
 	<description>
 		<![CDATA[
