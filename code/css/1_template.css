@@ -378,6 +378,12 @@ span.content_rating, .leading span.content_rating {
 	-webkit-border-radius: 5px;
 	-khtml-border-radius: 5px;
 }
+
+.pagination li{
+	display:inline-block;
+	margin:0 5px;
+}
+
 .pagenav {
 	margin:0;
 	padding:0;
