@@ -1,6 +1,6 @@
 <?php
 /**
-* @copyright Copyright (C) 2015 Joomlashack LLC. All rights reserved.
+* @copyright Copyright (C) 2016 Joomlashack LLC. All rights reserved.
 */
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );

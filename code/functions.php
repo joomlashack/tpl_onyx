@@ -6,8 +6,6 @@ if(JRequest::getVar('task') == 'edit' || JRequest::getVar('layout') == 'form'){
 	$styles .= '#main{width:100%; background:none;} #content{width:100%;} #sidebar1{display:none;} #sidebar2{display:none;}'.PHP_EOL;
 	$this->document->addStyleDeclaration($styles);
 }
- 
-
 
 class BuildHeader {
 	// getHeader() displays logo as text/tagline or SEO optimized graphic
@@ -29,7 +27,7 @@ class BuildHeader {
 			} else {
 			$background = JURI::base().'templates/'.$template->document->template.'/images/'.$logo;
 			}
-			
+
 			if ($headertype == "image") {
 			echo "<h1 id=\"graphic\"><a style=\"width:".$header_width."px;height:".$header_height."px;\" href=\"".JURI::base()."\" title=\"".$tagline."\">".$headline."</a></h1>";
 			$headerstyle = '#header {'
@@ -67,4 +65,3 @@ class BuildHeader {
 		$template->document->addStyleDeclaration($menustyle);
 	}
 }
-
