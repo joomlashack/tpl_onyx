@@ -74,7 +74,6 @@ a:hover {
 #breadcrumbs {
 	background: #F8F8F8 url(../images/lightblue/bread_bg.png) repeat-x 0 0;
 	position: relative;
-	height: 30px;
 	line-height: 30px;
 	font-size: 12px;
 	margin: 5px 0px 10px 0px;
@@ -166,7 +165,8 @@ div.caption, div.caption.red, div.caption.green, div.caption.blue {
 #menu ul.menu ul a {
 	line-height: 28px;
 }
-#menu li a {
+#menu li a ,
+#menu li span {
 	color: #FFF;
 	text-shadow: #003f5d 0 -1px 0;
 	-moz-text-shadow: 1px 1px 1px #000;

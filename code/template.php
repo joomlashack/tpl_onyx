@@ -1,6 +1,6 @@
 <?php
 /**
-* @copyright Copyright (C) 2010 Joomlashack LLC. All rights reserved.
+* @copyright Copyright (C) 2015 Joomlashack LLC. All rights reserved.
 */
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
@@ -42,8 +42,8 @@ class WrightTemplate extends WrightTemplateBase {
 	<header id="header" class="container_12 clearfix">
 		<?php // displays the logo
 		BuildHeader::getHeader($this);
-		BuildHeader::getMenu($this);		
-		?>		
+		BuildHeader::getMenu($this);
+		?>
 		<div class="clear"></div>
 	</header>
 	<!-- END HEADER -->
@@ -79,7 +79,7 @@ class WrightTemplate extends WrightTemplateBase {
 		</aside>
 		<div class="clear">&nbsp;</div>
 	</div>
-	
+
 </div>
 <?php if($this->countModules('user7')) : ?>
 <!-- BEGIN BOTTOM ELEMENTS -->

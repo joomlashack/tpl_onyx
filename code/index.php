@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright	Copyright (C) 2005 - 2010 Joomlashack LLC
+ * @copyright	Copyright (C) 2005 - 2015 Joomlashack LLC
  * @author		Jeremy Wilken :: Joomlashack
  */
 
