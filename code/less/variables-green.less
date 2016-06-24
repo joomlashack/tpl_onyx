@@ -32,7 +32,7 @@
 
 // Global values
 // --------------------------------------------------
-
+@color_one:				#5d9300;
 
 // Grays
 // -------------------------
@@ -59,8 +59,8 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        #dedede;
-@textColor:             #4d4d4d;
+@bodyBackground:        #202938;
+@textColor:             #f2f2f2;
 
 
 // Links
@@ -111,8 +111,8 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @green;
-@btnBackgroundHighlight:            @green;
+@btnBackground:                     @color_one;
+@btnBackgroundHighlight:            @color_one;
 @btnBorder:                         @btnBackground;
 
 @btnPrimaryBackground:              @linkColor;
@@ -146,7 +146,7 @@
 
 // Dropdowns
 // -------------------------
-@dropdownBackground:            @black;
+@dropdownBackground:            darken(@navbarBackground, 8%);
 @dropdownBorder:                rgba(0,0,0,.2);
 @dropdownDividerTop:            #e5e5e5;
 @dropdownDividerBottom:         @grayDark;
@@ -155,8 +155,8 @@
 @dropdownLinkColorHover:        @white;
 @dropdownLinkColorActive:       @white;
 
-@dropdownLinkBackgroundActive:  @linkColor;
-@dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
+@dropdownLinkBackgroundActive:  darken(@navbarBackground, 14%);
+@dropdownLinkBackgroundHover:   darken(@navbarBackground, 14%);
 
 
 
@@ -208,27 +208,33 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       @green;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBackgroundHighlight:       @color_one;
+@navbarBackground:                @color_one;
+@navbarBorder:                    1px solid rgba(0,0,0,0.5);
 
 @navbarText:                      @white;
 @navbarLinkColor:                 @white;
 @navbarLinkColorHover:            @white;
 @navbarLinkColorActive:           @white;
-@navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+@navbarLinkBackgroundHover:       darken(@navbarBackground, 3%);
+@navbarLinkBackgroundActive:      darken(@navbarBackground, 3%);
 
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
+<<<<<<< HEAD
 @navbarInverseBackground:                #2f2f2f;
 @navbarInverseBackgroundHighlight:       #2f2f2f;
 @navbarInverseBorder:                    #214967;
+=======
+@navbarInverseBackground:                #000;
+@navbarInverseBackgroundHighlight:       #000;
+@navbarInverseBorder:                    #252525;
+>>>>>>> responsive
 
 @navbarInverseText:                      @grayLight;
-@navbarInverseLinkColor:                 @grayLight;
-@navbarInverseLinkColorHover:            @white;
+@navbarInverseLinkColor:                 @white;
+@navbarInverseLinkColorHover:            @grayLight;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
 @navbarInverseLinkBackgroundHover:       transparent;
 @navbarInverseLinkBackgroundActive:      @navbarInverseBackground;

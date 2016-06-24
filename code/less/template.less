@@ -1,18 +1,29 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600);
 
-body{
-	background-repeat: repeat-x;
+body {
+	background-image: url(../images/bg.png);
+	background-position: top center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 
 a {
 	&:hover, &:focus {
 		text-decoration: none;
 	}
+  	.transition(all 0.4s ease-in-out 0s);
 }
 
 .btn {
 	background-image: none;
-	text-shadow: none;
+  	color: @white;
+  	text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  	&:hover,
+	&:focus {
+	  	color: @grayLighter;
+	  	background: darken(@color_one, 5%);
+	  	border-color: darken(@color_one, 5%) darken(@color_one, 5%) darken(@color_one, 8%);
+	}
 }
 
 .breadcrumb {
@@ -46,11 +57,50 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 		>li {
 			>a {
 				text-shadow: none;
-				font-size: 16px;
+			}
+		  	> .dropdown-menu{
+			  	&:before,
+			  	&:after {
+				  	border: none;
+				}
 			}
 		}
 	}
 }
+
+.dropdown-menu {
+	.border-radius(0);
+  	border: none;
+}
+
+/* Toolbar
+ ========================================================================== */
+
+.wrapper-toolbar {
+	margin-bottom: 20px;
+}
+
+#toolbar {
+
+}
+
+/* Header
+ ========================================================================== */
+
+#header {
+  	#nav-menu {
+	  	.nav > li {
+			> a {
+			  	font-size: 16px;
+			  	font-weight: 600;
+			  	text-shadow: 0 0 1px @gray;
+			}
+		}
+	}
+}
+
+/* Footer
+ ========================================================================== */
 
 #footer {
 	background-image: none;
