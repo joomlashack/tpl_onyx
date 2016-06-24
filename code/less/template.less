@@ -42,7 +42,6 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 		>li {
 			>a {
 				text-shadow: none;
-				font-size: 16px;
 			}
 		}
 	}
@@ -51,12 +50,31 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 /* Toolbar
  ========================================================================== */
 
+.wrapper-toolbar {
+	margin-bottom: 20px;
+}
 
+#toolbar {
+
+}
 
 /* Header
  ========================================================================== */
 
-
+#header {
+  	margin-bottom: 20px;
+  	#nav-menu {
+	  	.nav > li > a {
+		  	font-size: 16px;
+		  	font-weight: 600;
+		  	padding: 15px;
+		}
+	}
+	.navbar-inner {
+	  	padding: 0;
+	  	.border-radius(0);
+	}
+}
 
 /* Footer
  ========================================================================== */
