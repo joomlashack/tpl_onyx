@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600);
 
+body {
+	background-image: url(../images/bg.png);
+	background-position: top center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
 a {
 	&:hover, &:focus {
 		text-decoration: none;
@@ -82,7 +89,7 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 			> a {
 			  	font-size: 16px;
 			  	font-weight: 600;
-			  	text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+			  	text-shadow: 0 0 1px @gray;
 			}
 		}
 	}
