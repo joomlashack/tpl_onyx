@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600);
 
-body{
-	background: #202020;
-}
-
 a {
 	&:hover, &:focus {
 		text-decoration: none;
@@ -87,6 +83,19 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 			  	font-size: 16px;
 			  	font-weight: 600;
 			  	padding: 15px;
+			  	border-right: 1px solid rgba(0, 0, 0, 0.1);
+			  	border-left: 1px solid rgba(255, 255, 255, 0.1);
+			}
+			&:last-of-type > a {
+			  	border-right: none;
+			}
+			&:first-of-type > a {
+			  	border-left: none;
+			}
+		  	&.active > a,
+			> a:hover,
+			> a:focus {
+			  	border-left-color: rgba(0, 0, 0, 0.1);
 			}
 			.dropdown-menu {
 				> li {
@@ -109,6 +118,7 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 		  	.border-radius(0);
 			.nav {
 			  	float: right;
+			  	margin-right: 0;
 			  	.dropdown-toggle .caret {
 					margin-left: 5px;
 			  	}
