@@ -43,8 +43,23 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 			>a {
 				text-shadow: none;
 			}
+		  	> .dropdown-menu{
+			  	&:before,
+			  	&:after {
+				  	border: none;
+				}
+			}
 		}
 	}
+}
+
+.dropdown-menu {
+	.border-radius(0);
+  	padding: 0;
+}
+
+.navbar-inner {
+	border: none;
 }
 
 /* Toolbar
@@ -63,16 +78,39 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 
 #header {
   	margin-bottom: 20px;
+  	#menu {
+	  	margin-bottom: 0;
+	}
   	#nav-menu {
-	  	.nav > li > a {
-		  	font-size: 16px;
-		  	font-weight: 600;
-		  	padding: 15px;
+	  	.nav > li {
+			> a {
+			  	font-size: 16px;
+			  	font-weight: 600;
+			  	padding: 15px;
+			}
+			.dropdown-menu {
+				> li {
+				  	border-bottom: 1px solid rgba(255,255,255,0.1);
+				  	&:last-of-type {
+					  	border-bottom: none;
+					}
+					> a {
+					  	line-height: 26px;
+					}
+				}
+			}
 		}
 	}
-	.navbar-inner {
-	  	padding: 0;
-	  	.border-radius(0);
+	.navbar {
+		margin-bottom: 0;
+		margin-top: 15px;
+		.navbar-inner {
+		  	padding: 0;
+		  	.border-radius(0);
+			.nav {
+			  	float: right;
+			}
+		}
 	}
 }
 
