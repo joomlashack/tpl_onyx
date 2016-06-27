@@ -14,6 +14,10 @@ a {
   	.transition(all 0.4s ease-in-out 0s);
 }
 
+p {
+	margin-bottom: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -23,9 +27,33 @@ h6 {
 	font-weight: 600;
 }
 
+table {
+	a {
+		&:hover,
+		&:focus {
+			color: darken(@color_one, 5%);
+		}
+	}
+}
+
+legend {
+	color: @textColor;
+}
+
+.chzn-drop{
+	color: @grayDark;
+}
+
+fieldset {
+	margin: 0 0 10px;
+	&:last-of-type {
+		margin: 0;
+	}
+}
+
 .btn {
 	background-image: none;
-  	color: @white;
+  	color: @textColor;
   	text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   	&:hover,
 	&:focus {
@@ -43,18 +71,17 @@ h6 {
 	}
 }
 
+.control-group {
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
 .well {
 	border: 0;
-}
-
-dl.article-info dd:hover, dl.article-info dd>div:hover {
-	background-color: transparent;
-}
-
-.pull-none {
-	&.item-image {
-		margin-bottom: 15px;
-	}
+	.border-radius(0);
+	color: @grayDark;
+	padding: 30px;
 }
 
 .navbar {
@@ -77,6 +104,7 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 	}
 }
 
+.dropdown-submenu > .dropdown-menu,
 .dropdown-menu {
 	.border-radius(0);
   	border: none;
@@ -104,6 +132,7 @@ input[type="color"],
 .uneditable-input {
 	border: 1px solid #ccc;
 	.box-shadow(none);
+	.border-radius(0);
 }
 
 /* Articles
@@ -122,6 +151,53 @@ input[type="color"],
 				opacity: 0.5;
 			}
 		}
+	}
+}
+
+dl.article-info {
+	dd {
+		color: @textColor;
+		&:hover,
+		> div:hover {
+			background-color: transparent;
+		}
+	}
+}
+
+.pull-none {
+	&.item-image {
+		margin-bottom: 15px;
+	}
+}
+
+.items-more h3 {
+	padding: 0;
+}
+
+p.readmore {
+	clear: none;
+	float: none;
+	margin-bottom: 20px;
+}
+
+.pagination ul > li {
+	> span {
+		color: @grayLight;
+	}
+	> a {
+		&:hover,
+		&:focus {
+			color: darken(@color_one, 5%);
+		}
+	}
+}
+
+.nav-tabs.nav-stacked > li > a {
+	background: @white;
+	&:hover,
+	&:focus {
+		background: @grayLighter;
+		color: darken(@color_one, 5%);
 	}
 }
 
@@ -182,8 +258,16 @@ input[type="color"],
 	.wrapper-bottom-menu {
 		margin-top: 30px;
 		> .container {
-			border-top: 1px solid @white;
+			border-top: 1px solid @textColor;
 		}
+		+ .footer-content {
+			border-top: none;
+			padding-top: 0;
+		}
+	}
+	.footer-content {
+		border-top: 1px solid @textColor;
+		padding-top: 30px;
 	}
 }
 
@@ -212,7 +296,7 @@ input[type="color"],
 				color: @color_one;
 				&:hover,
 				&:focus {
-					color: @linkColor;
+					color: darken(@color_one, 10%);
 				}
 			}
 			> h3 {
@@ -252,11 +336,14 @@ input[type="color"],
 		color: @color_one;
 		&:hover,
 		&:focus {
-			color: @linkColor;
+			color: darken(@color_one, 5%);
 		}
 	}
 	> h3 {
 		margin-top: 0;
+	}
+	.breadcrumb {
+		padding: 15px 20px;
 	}
 }
 
