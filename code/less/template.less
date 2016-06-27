@@ -178,8 +178,13 @@ input[type="color"],
 
 #footer {
 	background-image: none;
-  background-color: transparent;
-
+  	background-color: transparent;
+	.wrapper-bottom-menu {
+		margin-top: 30px;
+		> .container {
+			border-top: 1px solid @white;
+		}
+	}
 }
 
 /* Grid Bottom
@@ -214,6 +219,44 @@ input[type="color"],
 				margin-top: 0;
 			}
 		}
+	}
+}
+
+/* Featured
+ ========================================================================== */
+
+#featured {
+	.hero-unit {
+		color: @grayDarker;
+		.border-radius(0);
+		.hero-unit {
+			background: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+
+/* Breadcrumbs
+ ========================================================================== */
+
+#breadcrumbs {
+	background: @white;
+	* {
+		color: @grayDarker;
+	}
+	i:before {
+		color: @grayLight;
+	}
+	a {
+		color: @color_one;
+		&:hover,
+		&:focus {
+			color: @linkColor;
+		}
+	}
+	> h3 {
+		margin-top: 0;
 	}
 }
 
