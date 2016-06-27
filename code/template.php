@@ -74,7 +74,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-top2 -->
 			<div id="grid-top2">
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-top2" chrome="wrightflexgrid" />
+				<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
