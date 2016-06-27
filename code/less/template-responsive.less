@@ -56,6 +56,19 @@
 			.nav {
 				float: right;
 				margin-right: 0;
+				> li {
+					> a {
+						color: lighten(@color_one, 15%);
+						&:hover,
+						&:focus {
+							color: lighten(@color_one, 5%);
+						}
+					}
+					&.active > a {
+						color: @white;
+						background: lighten(@color_one, 5%);
+					}
+				}
 			}
 		}
 	}
