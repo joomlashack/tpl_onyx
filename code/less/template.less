@@ -73,6 +73,30 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
   	border: none;
 }
 
+input.search-query {
+	.border-radius(0);
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border: 1px solid #ccc;
+	.box-shadow(none);
+}
+
 /* Toolbar
  ========================================================================== */
 
@@ -81,7 +105,28 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
 }
 
 #toolbar {
-
+	form {
+		margin: 0;
+		position: relative;
+		&:after {
+			font-family: FontAwesome;
+			content: '\f002';
+			position: absolute;
+			color: @grayLight;
+			right: 14px;
+			top: 9px;
+			font-size: 20px;
+		}
+	}
+	input.search-query {
+		border: none;
+		padding: 10px 40px 10px 14px;
+		color: @grayLight;
+		width: 160px;
+		&:focus {
+			color: @grayDark;
+		}
+	}
 }
 
 /* Header
