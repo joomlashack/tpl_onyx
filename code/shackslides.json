@@ -15,5 +15,7 @@
   "navigation_padding_horizontal":10,
   "navigation_padding_vertical":10,
   "navigation_effect_theme":"theme0",
-  "buttons_theme":"theme2"
+  "buttons_theme":"theme2",
+  "navigation_buttons_color":"EDEDED",
+  "navigation_buttonshover_color":"FFFFFF"
 }
