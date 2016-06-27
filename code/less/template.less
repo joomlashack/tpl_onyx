@@ -106,6 +106,25 @@ input[type="color"],
 	.box-shadow(none);
 }
 
+/* Articles
+ ========================================================================== */
+
+.article-image {
+	position: relative;
+	.item-image {
+		background-image: url(../images/plus.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50px auto;
+		a img {
+			.transition(all 0.4s ease-in-out 0s);
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+}
+
 /* Toolbar
  ========================================================================== */
 
