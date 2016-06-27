@@ -151,6 +151,7 @@ input[type="color"],
 		padding: 10px 40px 10px 14px;
 		color: @grayLight;
 		width: 160px;
+		.box-shadow(none);
 		&:focus {
 			color: @grayDark;
 		}
@@ -179,6 +180,40 @@ input[type="color"],
 	background-image: none;
   background-color: transparent;
 
+}
+
+/* Grid Bottom
+ ========================================================================== */
+
+#grid-bottom {
+	background: @white;
+	margin: 30px 0;
+	padding: 30px;
+	> .row,
+	> .row-fluid {
+		> [class*="span"] {
+			border-right: 1px solid @grayLighter;
+			&:last-of-type {
+				border-right: none;
+			}
+			* {
+				color: @grayDarker;
+			}
+			i:before {
+				color: @grayLight;
+			}
+			a {
+				color: @color_one;
+				&:hover,
+				&:focus {
+					color: @linkColor;
+				}
+			}
+			> h3 {
+				margin-top: 0;
+			}
+		}
+	}
 }
 
 /* Shackslides
