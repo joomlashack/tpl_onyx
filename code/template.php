@@ -144,7 +144,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-bottom2 -->
 			<div id="grid-bottom2" >
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" />
+				<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
@@ -175,7 +175,7 @@ defined('_JEXEC') or die('Restricted access');
 					if ($this->countModules('footer'))
 					:
 				?>
-					<w:module type="<?php echo $wrightGridMode; ?>" name="footer" chrome="wrightflexgrid" />
+					<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" />
 			 	<?php
 					endif;
 				?>
