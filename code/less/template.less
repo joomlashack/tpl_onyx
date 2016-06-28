@@ -146,13 +146,6 @@ a.joomlashack {
 	margin-bottom: 30px;
 }
 
-.page-header,
-div.cat_children > div,
-div.cat-children > div,
-div.categories-list > div{
-	border-color: lighten(@textColor, 20%);
-}
-
 .counter {
 	color: @textColor;
 }
@@ -441,5 +434,46 @@ body .jss-slider {
 		h1 {
 			margin-bottom: 5px;
 		}
+	}
+}
+
+/* Module Class Suffixes
+ ========================================================================== */
+
+.module_ms1,
+.moduletable_ms1 {
+	border: 1px dashed @textColor;
+	padding: 15px;
+	h3 {
+		margin-top: 0;
+	}
+}
+
+.module_ms2,
+.moduletable_ms2 {
+	padding: 15px;
+	border: 1px solid @textColor;
+	.box-shadow(2px 2px 0 @textColor);
+	h3 {
+		margin-top: 0;
+	}
+}
+
+
+.module_ms3,
+.moduletable_ms3 {
+	h3 {
+		border-bottom:1px dashed;
+		padding-bottom: 10px;
+	}
+}
+
+.module_ms4,
+.moduletable_ms4 {
+	border: 1px solid @textColor;
+	.box-shadow(0 2px 0 @textColor);
+	padding: 15px;
+	h3 {
+		margin-top: 0;
 	}
 }
