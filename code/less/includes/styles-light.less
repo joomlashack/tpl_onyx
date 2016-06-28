@@ -5,7 +5,17 @@
 .page-header,
 div.cat_children > div,
 div.cat-children > div,
-div.categories-list > div{
+div.categories-list > div,
+[class*="module"] > h3,
+[class*="module-table"] > h3 {
 	border-color: lighten(@textColor, 40%);
 	.box-shadow(0 1px 0 #fff);
+}
+
+.hero-unit,
+#grid-bottom,
+#grid-top2 {
+	h3 {
+		border-color: lighten(@textColor, 55%);
+	}
 }

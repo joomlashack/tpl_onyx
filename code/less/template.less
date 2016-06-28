@@ -340,10 +340,6 @@ p.readmore {
 	> .row,
 	> .row-fluid {
 		> [class*="span"] {
-			border-right: 1px solid @colorBackground;
-			&:last-of-type {
-				border-right: none;
-			}
 			i:before {
 				color: darken(@grayLighter, 10%);
 			}
@@ -440,40 +436,43 @@ body .jss-slider {
 /* Module Class Suffixes
  ========================================================================== */
 
+[class*="module"],
+[class*="module-table"] {
+	> h3 {
+		border-bottom: 1px solid;
+		padding-bottom: 10px;
+	}
+}
+
 .module_ms1,
 .moduletable_ms1 {
-	border: 1px dashed @textColor;
-	padding: 15px;
+	
 	h3 {
-		margin-top: 0;
+
 	}
 }
 
 .module_ms2,
 .moduletable_ms2 {
-	padding: 15px;
-	border: 1px solid @textColor;
-	.box-shadow(2px 2px 0 @textColor);
+
 	h3 {
-		margin-top: 0;
+
 	}
 }
 
 
 .module_ms3,
 .moduletable_ms3 {
+
 	h3 {
-		border-bottom:1px dashed;
-		padding-bottom: 10px;
+
 	}
 }
 
 .module_ms4,
 .moduletable_ms4 {
-	border: 1px solid @textColor;
-	.box-shadow(0 2px 0 @textColor);
-	padding: 15px;
+
 	h3 {
-		margin-top: 0;
+
 	}
 }
