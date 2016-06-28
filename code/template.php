@@ -128,20 +128,31 @@ defined('_JEXEC') or die('Restricted access');
 				</aside>
 			</div>
 			<?php
-				if ($this->countModules('grid-bottom'))
+				if ($this->countModules('grid-extra'))
 					:
 			?>
-			<!-- grid-bottom -->
-			<div id="grid-bottom" >
-                <w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
+			<!-- grid-extra -->
+			<div id="grid-extra" >
+                <w:module type="row-fluid" name="grid-extra" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
 			?>
 			<?php
-				if ($this->countModules('grid-bottom2'))
+				if ($this->countModules('grid-bottom'))
 					:
 			?>
+            <!-- grid-bottom -->
+            <div id="grid-bottom" >
+                <w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
+            </div>
+            <?php
+                endif;
+            ?>
+            <?php
+            if ($this->countModules('grid-bottom2'))
+                :
+            ?>
 			<!-- grid-bottom2 -->
 			<div id="grid-bottom2" >
 				<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
