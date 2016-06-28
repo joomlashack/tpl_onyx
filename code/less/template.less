@@ -21,11 +21,14 @@ p {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
 	font-weight: 600;
+}
+
+h3 {
+	font-weight: 400;
 }
 
 table {
@@ -54,7 +57,7 @@ fieldset {
 
 .btn {
 	background-image: none;
-  	color: @textColor;
+  	color: @white;
   	text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   	&:hover,
 	&:focus {
@@ -69,6 +72,9 @@ fieldset {
 
 	> li {
 		text-shadow: none;
+	}
+	> .active {
+		color: @textColor;
 	}
 }
 
@@ -87,7 +93,7 @@ fieldset {
 
 .navbar {
   .navbar-inner {
-    background-image: none;
+	  background-image: none;
   }
 
 	.nav {
@@ -136,6 +142,41 @@ input[type="color"],
 	.border-radius(0);
 }
 
+a.joomlashack {
+	margin-bottom: 30px;
+}
+
+.page-header,
+div.cat_children > div,
+div.cat-children > div,
+div.categories-list > div{
+	border-color: lighten(@textColor, 20%);
+}
+
+.counter {
+	color: @textColor;
+}
+
+.hero-unit {
+	background: @colorBackground;
+	color: @grayDarker;
+	.border-radius(0);
+	.hero-unit {
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.nav-tabs.nav-stacked > li > a {
+	background: @white;
+	&:hover,
+	&:focus {
+		background: @grayLighter;
+		color: darken(@color_one, 5%);
+	}
+}
+
 /* Articles
  ========================================================================== */
 
@@ -182,24 +223,21 @@ p.readmore {
 	margin-bottom: 20px;
 }
 
-.pagination ul > li {
-	> span {
-		color: @grayLight;
-	}
-	> a {
-		&:hover,
-		&:focus {
-			color: darken(@color_one, 5%);
+.pagination {
+	width: 100%;
+	ul {
+		margin-top: 15px;
+		> li {
+			> span {
+				color: @grayLight;
+			}
+			> a {
+				&:hover,
+				&:focus {
+					color: darken(@color_one, 5%);
+				}
+			}
 		}
-	}
-}
-
-.nav-tabs.nav-stacked > li > a {
-	background: @white;
-	&:hover,
-	&:focus {
-		background: @grayLighter;
-		color: darken(@color_one, 5%);
 	}
 }
 
@@ -210,6 +248,7 @@ p.readmore {
 			padding: 5px 30px 10px;
 			.item-title {
 				margin-top: 0;
+				font-weight: 400;
 			}
 		}
 	}
@@ -264,6 +303,7 @@ p.readmore {
  ========================================================================== */
 
 #header {
+	margin-bottom: 30px;
   	#nav-menu {
 	  	.nav > li {
 			> a {
@@ -279,23 +319,21 @@ p.readmore {
  ========================================================================== */
 
 #footer {
-	color: @textColor;
 	background-image: none;
   	background-color: transparent;
 	.wrapper-bottom-menu {
 		margin-top: 30px;
-		> .container {
-			border-top: 1px solid @color_one;
-		}
-		+ .footer-content {
-			border-top: none;
-			padding-top: 0;
-		}
 	}
 	.footer-content {
-		border-top: 1px solid @color_one;
 		padding-top: 30px;
+		p:last-of-type {
+			margin-bottom: 0;
+		}
 	}
+}
+
+.wrapper-footer {
+	background: @colorBackground;
 }
 
 /* Grid Bottom
@@ -314,7 +352,7 @@ p.readmore {
 				border-right: none;
 			}
 			i:before {
-				color: @grayLight;
+				color: darken(@grayLighter, 10%);
 			}
 			> h3 {
 				margin-top: 0;
@@ -327,25 +365,25 @@ p.readmore {
  ========================================================================== */
 
 #grid-bottom2 {
+	margin-bottom: 30px;
 	.moduletable,
 	.module {
 		margin-bottom: 0;
 	}
 }
 
+/* Main Content
+ ========================================================================== */
+
+#main-content {
+	margin-bottom: 30px;
+}
+
 /* Featured
  ========================================================================== */
 
 #featured {
-	.hero-unit {
-		color: @grayDarker;
-		.border-radius(0);
-		.hero-unit {
-			background: none;
-			padding: 0;
-			margin: 0;
-		}
-	}
+	margin-bottom: 30px;
 }
 
 /* Breadcrumbs
