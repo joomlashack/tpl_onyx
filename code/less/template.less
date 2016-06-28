@@ -440,39 +440,75 @@ body .jss-slider {
 [class*="module-table"] {
 	> h3 {
 		border-bottom: 1px solid;
-		padding-bottom: 10px;
+		padding-bottom: 13px;
 	}
 }
 
 .module_ms1,
 .moduletable_ms1 {
-	
+	position: relative;
+	padding: 22px 30px 30px;
+	background: @colorBackground;
+	margin-bottom: 15px;
 	h3 {
-
+		margin-top: 0;
+	}
+	&:after {
+		border-color: @colorBackground transparent transparent;
+		margin: 30px 0 0 -15px;
+		position: absolute;
+		border-image: none;
+		border-style: solid;
+		border-width: 15px;
+		content: " ";
+		height: 0;
+		left: 50%;
+		top: auto;
+		width: 0;
 	}
 }
 
 .module_ms2,
 .moduletable_ms2 {
-
+	position: relative;
+	padding: 22px 30px 30px;
+	background: @colorBackground;
+	margin-top: 15px;
 	h3 {
-
+		margin-top: 0;
+	}
+	&:before {
+		border-color: transparent transparent @colorBackground;
+		margin: -52px 0 0 -15px;
+		position: absolute;
+		border-image: none;
+		border-style: solid;
+		border-width: 15px;
+		content: " ";
+		height: 0;
+		left: 50%;
+		top: auto;
+		width: 0;
 	}
 }
 
 
 .module_ms3,
 .moduletable_ms3 {
-
+	padding: 22px 30px 30px;
+	background: @colorBackground;
+	border-top: 3px solid @color_one;
 	h3 {
-
+		margin-top: 0;
 	}
 }
 
 .module_ms4,
 .moduletable_ms4 {
-
+	padding: 22px 30px 30px;
+	background: @colorBackground;
+	border-bottom: 3px solid @color_one;
 	h3 {
-
+		margin-top: 0;
 	}
 }
