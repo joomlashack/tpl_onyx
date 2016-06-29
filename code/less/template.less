@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600);
+@import url(//fonts.googleapis.com/css?family=Arimo:400,400italic,700);
 
 body {
 	background-position: top center;
@@ -66,11 +66,22 @@ fieldset {
 	background-image: none;
   	color: @white;
   	text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+	padding: 4px 12px 2px;
   	&:hover,
 	&:focus {
 	  	color: @grayLighter;
 	  	background: darken(@color_one, 5%);
 	  	border-color: darken(@color_one, 5%) darken(@color_one, 5%) darken(@color_one, 8%);
+	}
+	&.btn-primary {
+		background: lighten(@color_one, 8%);
+	}
+	&.btn-link {
+		color: @color_one;
+		&:hover,
+		&:focus {
+			color: @white;
+		}
 	}
 }
 
@@ -337,6 +348,13 @@ p.readmore {
 	background: @colorBackground;
 }
 
+/* Grid Top
+ ========================================================================== */
+
+#grid-top {
+	margin-bottom: 30px;
+}
+
 /* Grid Bottom
  ========================================================================== */
 
@@ -417,8 +435,13 @@ body .jss-slider {
 				font-size: 45px;
 				line-height: 50px;
 			}
-			.jss-description * {
-				align-self: baseline;
+			.jss-description {
+				* {
+					align-self: baseline;
+				}
+				p {
+					margin-bottom: 10px;
+				}
 			}
 		}
 	}
