@@ -187,7 +187,7 @@ defined('_JEXEC') or die('Restricted access');
 					:
 				?>
 				<!-- bottom-menu -->
-				<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
+				<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" name="bottom-menu" wrapClass="navbar-inverse" />
 				<?php
 					endif;
 				?>
