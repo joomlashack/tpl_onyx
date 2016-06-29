@@ -118,6 +118,12 @@
 				</field>
 				<!-- End of default Wright params -->
 			</fieldset>
+            <fieldset name="Onyx" label="TPL_JS_ONYX_OPTIONS">
+                <field name="onyx_toolbar_displayed" type="radio" class="btn-group" default="navbar-fixed-top" label="TPL_JS_ONYX_TOOLBAR_DISPLAYED" description="TPL_JS_ONYX_TOOLBAR_DISPLAYED_DESC">
+                    <option value="navbar-fixed-top">TPL_JS_ONYX_TOOLBAR_FIXED</option>
+                    <option value="navbar-static-top">TPL_JS_ONYX_TOOLBAR_STATIC</option>
+                </field>
+            </fieldset>
 		</fields>
 	</config>
 </extension>
