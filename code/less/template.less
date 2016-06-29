@@ -66,15 +66,15 @@ fieldset {
 	background-image: none;
   	color: @white;
   	text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-	padding: 4px 12px 2px;
+	padding: 4px 12px;
   	&:hover,
 	&:focus {
 	  	color: @grayLighter;
-	  	background: darken(@color_one, 5%);
+	  	background-color: darken(@color_one, 5%);
 	  	border-color: darken(@color_one, 5%) darken(@color_one, 5%) darken(@color_one, 8%);
 	}
 	&.btn-primary {
-		background: lighten(@color_one, 8%);
+		background-color: darken(@color_one, 4%);
 	}
 	&.btn-link {
 		color: @color_one;
@@ -82,6 +82,9 @@ fieldset {
 		&:focus {
 			color: @white;
 		}
+	}
+	&.btn-large {
+		padding: 11px 19px;
 	}
 }
 
@@ -408,6 +411,13 @@ p.readmore {
 	margin-bottom: 30px;
 }
 
+/* Inner
+ ========================================================================== */
+
+#inner {
+	margin-bottom: 30px;
+}
+
 /* Breadcrumbs
  ========================================================================== */
 
@@ -435,13 +445,8 @@ body .jss-slider {
 				font-size: 45px;
 				line-height: 50px;
 			}
-			.jss-description {
-				* {
-					align-self: baseline;
-				}
-				p {
-					margin-bottom: 10px;
-				}
+			.jss-description * {
+				align-self: baseline;
 			}
 		}
 	}
@@ -568,4 +573,9 @@ body .jss-slider {
 		margin-right: -30px;
 		margin-top: -22px;
 	}
+}
+
+.module_inverted,
+.moduletable_inverted {
+	padding: 30px;
 }

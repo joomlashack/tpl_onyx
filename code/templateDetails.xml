@@ -50,6 +50,7 @@
 		<position>sidebar1</position>
 		<position>sidebar2</position>
 		<position>below-content</position>
+        <position>inner</position>
         <position>grid-extra</position>
 		<position>grid-bottom</position>
 		<position>grid-bottom2</position>

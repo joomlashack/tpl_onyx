@@ -127,6 +127,17 @@ defined('_JEXEC') or die('Restricted access');
 					<w:module name="sidebar2" chrome="xhtml" />
 				</aside>
 			</div>
+            <?php
+            if ($this->countModules('inner'))
+                :
+                ?>
+                <!-- inner -->
+                <div id="inner" >
+                    <w:module type="none" name="inner" chrome="xhtml" />
+                </div>
+            <?php
+            endif;
+            ?>
 			<?php
 				if ($this->countModules('grid-extra'))
 					:
