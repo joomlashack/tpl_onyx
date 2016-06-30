@@ -164,6 +164,7 @@
 	#grid-top {
 		margin-bottom: 30px;
 		.our-services {
+			display: table;
 			margin-bottom: -20px;
 		}
 	}
@@ -181,6 +182,18 @@
 		.moduletable,
 		.module {
 			padding-top: 10px;
+		}
+	}
+
+	.row-fluid {
+		&.our-services {
+			background: @colorBackground;
+			[class*="span"] {
+				float: left;
+				.icon-5x {
+					font-size: 4em;
+				}
+			}
 		}
 	}
 
@@ -217,6 +230,20 @@
 		}
 	}
 
+	.row-fluid {
+		&.our-services {
+			[class*="span"] {
+				padding: 0 15px;
+				.icon-5x {
+					font-size: 2.5em;
+				}
+				h4 {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
 }
 
 @media (max-width: 640px) {
@@ -231,6 +258,29 @@
 				.owl-next {
 					height: 20px !important;
 					width: 20px !important;
+				}
+			}
+		}
+	}
+
+	.row-fluid {
+		&.our-services {
+			[class*="span"] {
+				.box-shadow(none);
+				float: none;
+				width: 100%;
+				margin: 15px 0;
+				.icon-5x {
+					font-size: 5em;
+				}
+				h4 {
+					font-size: inherit;
+				}
+				&:first-child {
+					margin-top: 30px;
+				}
+				&:last-child {
+					margin-bottom: 30px;
 				}
 			}
 		}
