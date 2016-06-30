@@ -97,6 +97,18 @@
 
 }
 
+@media (max-width: 1199px) {
+	body .jss-slider {
+		.jss-navigation .jss-navigation-buttons {
+			.owl-prev,
+			.owl-next {
+				height: 25px !important;
+				width: 25px !important;
+			}
+		}
+	}
+}
+
 @media (max-width: 979px) {
 
 	#toolbar {
@@ -108,6 +120,12 @@
 			&:after {
 				left: 185px;
 			}
+		}
+	}
+
+	body .jss-slider {
+		.jss-navigation .jss-navigation-buttons {
+			top: 140px;
 		}
 	}
 
@@ -126,17 +144,6 @@
 		margin-bottom: 0;
 		.navbar .btn-navbar {
 			margin-bottom: 5px;
-		}
-	}
-
-	body .jss-slider {
-		.jss-navigation .jss-navigation-buttons {
-			top: 140px;
-			.owl-prev,
-			.owl-next {
-				height: 25px !important;
-				width: 25px !important;
-			}
 		}
 	}
 
@@ -189,17 +196,21 @@
 		}
 	}
 
-	body .jss-slider {
-		.owl-carousel {
-			.jss-title-description {
-				.jss-title,
-				.jss-description {
-					width: 70% !important;
-				}
-				.jss-title {
-					h2 {
-						font-size: 24px;
-						line-height: 26px;
+	.is_iphone,
+	.is_android,
+	body {
+		.jss-slider {
+			.owl-carousel {
+				.jss-title-description {
+					.jss-title,
+					.jss-description {
+						width: 300px !important;
+					}
+					.jss-title {
+						h2 {
+							font-size: 21px;
+							line-height: 25px;
+						}
 					}
 				}
 			}
@@ -210,13 +221,17 @@
 
 @media (max-width: 640px) {
 
-	body .jss-slider {
-		.jss-navigation .jss-navigation-buttons {
-			top: 100px;
-			.owl-prev,
-			.owl-next {
-				height: 20px !important;
-				width: 20px !important;
+	.is_iphone,
+	.is_android,
+	body {
+		.jss-slider {
+			.jss-navigation .jss-navigation-buttons {
+				top: 65px;
+				.owl-prev,
+				.owl-next {
+					height: 20px !important;
+					width: 20px !important;
+				}
 			}
 		}
 	}
