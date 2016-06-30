@@ -436,17 +436,36 @@ body .jss-slider {
 	.owl-carousel {
 		.jss-title-description {
 			.jss-title * {
-				align-self: end;
+				align-self: flex-end;
+				-webkit-align-self: flex-end;
 				font-size: 45px;
 				line-height: 50px;
 			}
 			.jss-description * {
 				align-self: baseline;
+				-webkit-align-self: baseline;
 			}
 		}
 	}
 	.jss-navigation .jss-navigation-buttons {
 		top: 240px;
+	}
+}
+
+.is_safari,
+.is_chrome {
+	&.body .jss-slider {
+		.owl-carousel {
+			.jss-title-description {
+				.jss-title {
+					display: table-cell;
+					vertical-align: bottom;
+					* {
+						display: inline-block;
+					}
+				}
+			}
+		}
 	}
 }
 
