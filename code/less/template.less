@@ -676,6 +676,24 @@ body.is_safari {
 	}
 }
 
+.is_iphone.v_7 {
+	.jss-slider {
+		.owl-carousel {
+			.jss-title-description {
+				.jss-title {
+					h2 {
+						font-size: 16px;
+						line-height: 22px;
+					}
+				}
+			}
+		}
+		.jss-navigation .jss-navigation-buttons {
+			top: 15px;
+		}
+	}
+}
+
 .is_safari {
 	h1,
 	h2,
@@ -684,6 +702,17 @@ body.is_safari {
 	h5,
 	h6 {
 		text-rendering: auto;
+	}
+	&.v_9 {
+		.jss-slider {
+			.owl-carousel {
+				.jss-title-description {
+					.jss-title {
+						display: inherit;
+					}
+				}
+			}
+		}
 	}
 }
 
