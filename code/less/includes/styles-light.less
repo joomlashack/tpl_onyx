@@ -1,0 +1,49 @@
+#footer {
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.page-header,
+div.cat_children > div,
+div.cat-children > div,
+div.categories-list > div,
+[class*="module"] > h3,
+[class*="module-table"] > h3 {
+	border-color: lighten(@textColor, 40%);
+	.box-shadow(0 1px 0 #fff);
+}
+
+.hero-unit,
+#grid-bottom,
+#grid-top2,
+#grid-extra,
+.module_ms1,
+.moduletable_ms1,
+.module_ms2,
+.moduletable_ms2,
+.module_ms3,
+.moduletable_ms3,
+.module_ms4,
+.moduletable_ms4 {
+	h3 {
+		border-color: lighten(@textColor, 60%);
+	}
+}
+
+.module_box,
+.moduletable_box {
+	.module_ms1,
+	.moduletable_ms1 {
+		background: @white;
+		&:after {
+			border-color: @white transparent transparent;
+		}
+	}
+}
+
+.module_inverted,
+.moduletable_inverted {
+	background: @gray;
+	* {
+		color: @white;
+	}
+}

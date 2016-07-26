@@ -1,2 +1,2 @@
-www.dir=/var/www/onyx
-node.skip=false
+www.dir=/var/www/onyx/
+node.build=all

@@ -1,0 +1,294 @@
+@media (min-width: 980px) {
+
+	.pagination {
+		ul {
+			float: left;
+		}
+	}
+
+	#header {
+		margin-bottom: 30px;
+		margin-top: 10px;
+		#menu {
+		  	margin-bottom: 0;
+		}
+	  	#nav-menu {
+			.nav > li {
+				> a {
+					padding: 15px;
+					border-right: 1px solid rgba(0, 0, 0, 0.1);
+					border-left: 1px solid rgba(255, 255, 255, 0.1);
+				}
+				&:last-of-type > a {
+				  	border-right: none;
+				}
+				&:first-of-type > a {
+				  	border-left: none;
+				}
+				&.active > a,
+				> a:hover,
+				> a:focus {
+				  	border-left-color: rgba(0, 0, 0, 0.1);
+				}
+				.dropdown-menu {
+					margin-top: 0;
+					> li {
+						> a {
+						  	line-height: 22px;
+						}
+					}
+				}
+			}
+		}
+		.navbar {
+			margin-bottom: 0;
+			.navbar-inner {
+				padding: 0;
+				.border-radius(0);
+				.nav {
+					float: right;
+					margin-right: 0;
+					.dropdown-toggle .caret {
+					  	margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	#footer {
+		.navbar {
+			margin-bottom: 0;
+			.navbar-inner {
+				padding: 0;
+				.border-radius(0);
+				border-top: 1px solid @color_one;
+				border-bottom: 1px solid @color_one;
+				.nav {
+					margin-right: 0;
+					> li {
+						> a {
+							color: lighten(@color_one, 15%);
+							&:hover,
+							&:focus {
+								color: lighten(@color_one, 5%);
+							}
+						}
+						&.active > a {
+							color: @white;
+							background: lighten(@color_one, 5%);
+						}
+					}
+				}
+			}
+		}
+		.navbar-inverse .navbar-inner {
+			background-color: transparent;
+		}
+	}
+
+	#grid-top {
+		margin-bottom: 30px;
+		.moduletable,
+		.module {
+			margin-bottom: 0;
+		}
+	}
+
+}
+
+@media (max-width: 1199px) {
+	body .jss-slider {
+		.jss-navigation .jss-navigation-buttons {
+			.owl-prev,
+			.owl-next {
+				height: 25px !important;
+				width: 25px !important;
+			}
+		}
+	}
+}
+
+@media (max-width: 979px) {
+
+	#toolbar {
+		.search.pull-right {
+			float: none;
+		}
+		form{
+			margin-bottom: 10px;
+			&:after {
+				left: 185px;
+			}
+		}
+	}
+
+	body .jss-slider {
+		.jss-navigation .jss-navigation-buttons {
+			top: 140px;
+		}
+	}
+
+	#logo,
+	#menu {
+		float: none;
+		width: auto;
+	}
+
+	#logo {
+		max-width: 200px;
+		margin: 0 auto 20px;
+	}
+
+	#menu {
+		margin-bottom: 0;
+		.navbar .btn-navbar {
+			margin-bottom: 5px;
+		}
+	}
+
+	.blog-featured {
+		[class*="span"] {
+			margin-bottom: 30px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.module_box,
+	.moduletable_box {
+		margin-bottom: 30px;
+	}
+
+	#grid-top {
+		margin-bottom: 30px;
+		.our-services {
+			display: table;
+			margin-bottom: -20px;
+		}
+	}
+
+	#footer {
+		.wrapper-bottom-menu {
+			margin: 20px 20px 0;
+			#bottom-menu {
+				padding: 0 20px;
+			}
+		}
+		.footer-content {
+			padding: 0 40px;
+		}
+		.moduletable,
+		.module {
+			padding-top: 10px;
+		}
+	}
+
+	.row-fluid {
+		&.our-services {
+			background: @colorBackground;
+			[class*="span"] {
+				float: left;
+				.icon-5x {
+					font-size: 4em;
+				}
+			}
+		}
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.text-center-medium {
+		text-align: center;
+		ul.jssocialicons-horizontal > li {
+			float: unset !important;
+			display: inline-block;
+		}
+	}
+
+	.is_iphone,
+	.is_android,
+	body {
+		.jss-slider {
+			.owl-carousel {
+				.jss-title-description {
+					.jss-title,
+					.jss-description {
+						width: 300px !important;
+					}
+					.jss-title {
+						h2 {
+							font-size: 21px;
+							line-height: 25px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.row-fluid {
+		&.our-services {
+			[class*="span"] {
+				padding: 0 15px;
+				.icon-5x {
+					font-size: 2.5em;
+				}
+				h4 {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	#menu .navbar .btn-navbar {
+		margin-bottom: 6px;
+		margin-top: 6px;
+	}
+
+}
+
+@media (max-width: 640px) {
+
+	.is_iphone,
+	.is_android,
+	body {
+		.jss-slider {
+			.jss-navigation .jss-navigation-buttons {
+				top: 65px;
+				.owl-prev,
+				.owl-next {
+					height: 20px !important;
+					width: 20px !important;
+				}
+			}
+		}
+	}
+
+	.row-fluid {
+		&.our-services {
+			[class*="span"] {
+				.box-shadow(none);
+				float: none;
+				width: 100%;
+				margin: 15px 0;
+				.icon-5x {
+					font-size: 5em;
+				}
+				h4 {
+					font-size: inherit;
+				}
+				&:first-child {
+					margin-top: 30px;
+				}
+				&:last-child {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+}
