@@ -1,0 +1,38 @@
+body {
+	background-image: url(../images/bg.png);
+}
+
+.page-header,
+div.cat_children > div,
+div.cat-children > div,
+div.categories-list > div,
+[class*="module"] > h3,
+[class*="module-table"] > h3 {
+	border-color: @black;
+	.box-shadow(0 1px 0 rgba(255, 255, 255, 0.15));
+}
+
+.module_box,
+.moduletable_box {
+	background: @grayDark;
+	.module_ms1,
+	.moduletable_ms1 {
+		background: #070707;
+		&:after {
+			border-color: #070707 transparent transparent;
+		}
+	}
+}
+
+.module_inverted,
+.moduletable_inverted {
+	background: @white;
+	* {
+		color: @black;
+	}
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: @grayDark;
+}

@@ -1,0 +1,21 @@
+{
+  "title_description_position":"left",
+  "title_description_alignment":"right",
+  "title_description_padding_vertical":10,
+  "title_description_padding_horizontal":30,
+  "title_show":true,
+  "title_width":510,
+  "title_tag":"h2",
+  "description_show":true,
+  "description_width":510,
+  "navigation_show":false,
+  "navigation_orientation":"horizontal",
+  "navigation_align_horizontal":"center",
+  "navigation_align_vertical":"bottom",
+  "navigation_padding_horizontal":10,
+  "navigation_padding_vertical":10,
+  "navigation_effect_theme":"theme0",
+  "buttons_theme":"theme2",
+  "navigation_buttons_color":"EDEDED",
+  "navigation_buttonshover_color":"FFFFFF"
+}
