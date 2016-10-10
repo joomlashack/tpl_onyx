@@ -27,11 +27,9 @@ defined('_JEXEC') or die('Restricted access');
 		?>
 		<!-- toolbar -->
 		<?php
-			echo $onyxToolbarCollapse;
 			if ($onyxToolbarCollapse) :
 		?>
-		<button data-toggle="collapse" data-target="#t-collpase"><i class="icon icon-arrow-down"></i></button>
-		<div id="t-collpase" class="collapse">
+		<div id="t-collapse" class="collapse">
 		<?php
 			endif;
 		?>
@@ -39,6 +37,9 @@ defined('_JEXEC') or die('Restricted access');
 		<?php
 			if ($onyxToolbarCollapse) :
 		?>
+		</div>
+		<div class="<?php echo $wrightContainerClass ?> mn-t-2">
+			<button class="btn btn-link pull-right" data-toggle="collapse" data-target="#t-collapse"><i class="icon icon-arrow-down"></i></button>
 		</div>
 		<?php
 			endif;
