@@ -26,7 +26,23 @@ defined('_JEXEC') or die('Restricted access');
 				:
 		?>
 		<!-- toolbar -->
+		<?php
+			echo $onyxToolbarCollapse;
+			if ($onyxToolbarCollapse) :
+		?>
+		<button data-toggle="collapse" data-target="#t-collpase"><i class="icon icon-arrow-down"></i></button>
+		<div id="t-collpase" class="collapse">
+		<?php
+			endif;
+		?>
 		<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" wrapClass="<?php echo $onyxToolbarDisplayed; ?> navbar-inverse" type="toolbar" name="toolbar" />
+		<?php
+			if ($onyxToolbarCollapse) :
+		?>
+		</div>
+		<?php
+			endif;
+		?>
 		<?php
 			endif;
 		?>
