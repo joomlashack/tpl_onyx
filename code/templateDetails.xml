@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
-<extension version="2.5" type="template" method="upgrade" client="site">
+<extension version="3.0" type="template" method="upgrade" client="site">
 	<name>js_onyx</name>
-	<creationDate>July 2016</creationDate>
+	<creationDate>January 2017</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>https://www.joomlashack.com</authorUrl>
-	<copyright>Copyright Joomlashack 2005 - 2016. All rights reserved</copyright>
+	<copyright>Copyright Joomlashack 2005 - 2017. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>3.0.0</version>
+	<version>3.0.2</version>
     <description>TPL_JS_ONYX_XML_DESCRIPTION</description>
 
 	<languages folder="language">

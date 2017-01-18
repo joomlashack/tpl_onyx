@@ -77,10 +77,14 @@ fieldset {
 		background-color: darken(@color_one, 4%);
 	}
 	&.btn-link {
-		color: @color_one;
+		color: @linkColor;
+
 		&:hover,
 		&:focus {
-			color: @white;
+			background-color: transparent;
+			border-color: transparent;
+			color: @linkColorHover;
+			text-decoration: none;
 		}
 	}
 	&.btn-large {
@@ -345,7 +349,7 @@ p.readmore {
 #footer {
 	background-image: none;
 	background: @colorBackground;
-	
+
 	.wrapper-bottom-menu {
 		margin-top: 30px;
 	}
@@ -734,4 +738,12 @@ body.is_ipad {
 	#main-content {
 		margin-bottom: 0;
 	}
+}
+
+#t-collapse .wrapper-toolbar {
+	margin-bottom: 0;
+}
+
+#t-collapse.in + div > button > .icon-arrow-down:before {
+	content: "\f062";
 }
