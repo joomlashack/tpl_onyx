@@ -124,10 +124,6 @@
                     <option value="navbar-fixed-top">TPL_JS_ONYX_TOOLBAR_FIXED</option>
                     <option value="navbar-static-top">TPL_JS_ONYX_TOOLBAR_STATIC</option>
                 </field>
-                <field name="onyx_toolbar_collapse" type="radio" class="btn-group" default="0" label="TPL_JS_ONYX_TOOLBAR_SHOW" description="TPL_JS_ONYX_TOOLBAR_SHOW_DESC">
-                    <option value="1">JYES</option>
-                    <option value="0">JNO</option>
-                </field>
             </fieldset>
 		</fields>
 	</config>
