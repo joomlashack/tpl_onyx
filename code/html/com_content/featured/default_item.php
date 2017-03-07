@@ -20,16 +20,20 @@ $images = json_decode($this->item->images);
 if ($images->image_intro != '')
 {
 	$this->item->wrightElementsStructure = Array(
-		"div.article-image",
-			"image",
-		"/div",
-		"div.article-content",
-			"title",
-			"icons",
-			"article-info",
-			"content",
-		"/div",
-	);
+        "div.article-image",
+            "image",
+        "/div",
+        "div.article-content",
+            "title",
+            "icons",
+            "article-info",
+            "legendtop",
+            "content",
+            "legendbottom",
+            "article-info-below",
+            "article-info-split",
+        "/div",
+    );
 }
 else
 {
@@ -39,7 +43,11 @@ else
 			"title",
 			"icons",
 			"article-info",
+			"legendtop",
 			"content",
+			"legendbottom",
+			"article-info-below",
+			"article-info-split",
 		"/div"
 	);
 }
