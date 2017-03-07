@@ -28,7 +28,7 @@ if ($images->image_intro != '')
 			"icons",
 			"article-info",
             "legendtop",
-			"content",
+            "content",
             "legendbottom",
             "article-info-below",
             "article-info-split",
@@ -43,11 +43,11 @@ else
 			"title",
 			"icons",
 			"article-info",
-            "legendtop",
+			"legendtop",
 			"content",
-            "legendbottom",
-            "article-info-below",
-            "article-info-split",
+			"legendbottom",
+			"article-info-below",
+			"article-info-split",
 		"/div"
 	);
 }
