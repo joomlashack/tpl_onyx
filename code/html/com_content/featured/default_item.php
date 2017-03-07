@@ -27,11 +27,11 @@ if ($images->image_intro != '')
 			"title",
 			"icons",
 			"article-info",
-            "legendtop",
-            "content",
-            "legendbottom",
-            "article-info-below",
-            "article-info-split",
+			"legendtop",
+			"content",
+			"legendbottom",
+			"article-info-below",
+			"article-info-split",
 		"/div",
 	);
 }
