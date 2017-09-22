@@ -1,0 +1,27 @@
+{
+    "name"             : "joomlashack/tpl_js_onyx",
+    "description"      : "JS Onyx",
+    "minimum-stability": "stable",
+    "license"          : "GPL-2+",
+    "type"             : "joomla.template",
+    "extra"            : {
+        "element"        : "tpl_js_onyx",
+        "element-short"  : "js_onyx",
+        "name"           : "Onyx",
+        "client"         : "site",
+        "package-license": "pro",
+        "target-platform": "3.*"
+    },
+    "authors"          : [
+        {
+            "name" : "Joomlashack",
+            "email": "help@joomlashack.com"
+        }
+    ],
+    "require"          : {
+        "php"       : ">= 5.4"
+    },
+    "require-dev"      : {
+        "phing/phing": "*"
+    }
+}
