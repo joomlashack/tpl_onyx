@@ -117,17 +117,18 @@
 				<field name="mobilemenuspacer" label="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_label" description="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_DESC" type="spacer" />
 				<field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
                 <!-- End of default Wright params -->
-			                
-                <field
-                    type="customfooter"
-                    name="customfooter"
-                    media="tpl_js_onyx" />
             </fieldset>
             <fieldset name="Onyx" label="TPL_JS_ONYX_OPTIONS">
                 <field name="onyx_toolbar_displayed" type="radio" class="btn-group" default="navbar-fixed-top" label="TPL_JS_ONYX_TOOLBAR_DISPLAYED" description="TPL_JS_ONYX_TOOLBAR_DISPLAYED_DESC">
                     <option value="navbar-fixed-top">TPL_JS_ONYX_TOOLBAR_FIXED</option>
                     <option value="navbar-static-top">TPL_JS_ONYX_TOOLBAR_STATIC</option>
                 </field>
+            </fieldset>
+            <fieldset name="footer" addfieldpath="/templates/js_onyx/form/fields">     
+                <field
+                    type="customfooter"
+                    name="customfooter"
+                    media="tpl_js_onyx" />
             </fieldset>
 		</fields>
 	</config>
