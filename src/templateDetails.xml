@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="3.0" type="template" method="upgrade" client="site">
 	<name>js_onyx</name>
 	<creationDate>June 19 2018</creationDate>
@@ -119,7 +118,7 @@
                     <option value="navbar-static-top">TPL_JS_ONYX_TOOLBAR_STATIC</option>
                 </field>
             </fieldset>
-            <fieldset name="footer" addfieldpath="/templates/js_onyx/form/fields">     
+            <fieldset name="footer" addfieldpath="/templates/js_onyx/form/fields">
                 <field
                     type="customfooter"
                     name="customfooter"
