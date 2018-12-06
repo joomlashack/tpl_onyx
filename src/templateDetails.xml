@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="template" method="upgrade" client="site">
 	<name>js_onyx</name>
-	<creationDate>June 19 2018</creationDate>
+	<creationDate>December 06 2018</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>https://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2005 - 2018. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>3.2.17</version>
-    <description>TPL_JS_ONYX_XML_DESCRIPTION</description>
+	<version>3.2.18</version>
+	<description>TPL_JS_ONYX_XML_DESCRIPTION</description>
 
 	<languages folder="language">
 		<!-- en-GB -->
@@ -66,7 +66,6 @@
 		<fields name="params" addfieldpath="/templates/js_onyx/wright/parameters/joomla_3.0">
 			<fieldset name="basic">
                 <!-- Start of default Wright params -->
-				<field name="wright" type="wright"/>
 				<field name="rebrand" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_LABEL" description="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_DESC">
 				    <option value="1">JYES</option>
 				    <option value="0">JNO</option>
