@@ -37,6 +37,29 @@ div.categories-list > div,
 	background-color: @grayDark;
 }
 
-table {
+.table {
 	color: @grayDark;
+
+	&.table-scores {
+		color: @white;
+		background: transparent;
+
+		tr {
+
+			td {
+				border-color: rgba(255,255,255,0.1);
+			}
+
+			&:first-of-type {
+
+				td {
+					border-top: 0;
+				}
+			}
+
+			th {
+				border-top: 0;
+			}
+		}
+	}
 }
