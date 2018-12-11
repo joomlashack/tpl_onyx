@@ -51,3 +51,28 @@ div.categories-list > div,
 #footer {
 	color: @grayLighter;
 }
+
+.table {
+
+	&.table-scores {
+		background: transparent;
+
+		tr {
+
+			td {
+				border-color: rgba(0,0,0,0.1);
+			}
+
+			&:first-of-type {
+
+				td {
+					border-top: 0;
+				}
+			}
+
+			th {
+				border-top: 0;
+			}
+		}
+	}
+}
