@@ -73,7 +73,7 @@
 				    <option value="0">JNO</option>
  				</field>
  				<field name="style" type="styles" default="green-light" label="TPL_JS_WRIGHT_FIELD_STYLE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_DESC" />
- 				<field name="styleVariation" type="list" default="light" label="TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_DESC" showon="style:custom">
+ 				<field name="styleVariation" type="list" default="light" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_DESC" showon="style:custom">
  				    <option value="light">TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_LIGHT</option>
  				    <option value="dark">TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_DARK</option>
  				</field>
