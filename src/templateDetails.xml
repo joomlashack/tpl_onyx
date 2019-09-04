@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.9" type="template" method="upgrade" client="site">
 	<name>js_onyx</name>
-	<creationDate>September 3 2019</creationDate>
+	<creationDate>September 4 2019</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>https://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2005 - 2019. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>3.3.6b2</version>
+	<version>3.3.6b3</version>
 	<description>TPL_JS_ONYX_XML_DESCRIPTION</description>
 
 	<languages folder="language">
